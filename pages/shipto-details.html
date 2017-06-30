@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Ship To Details</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1 class="text-uppercase">SHIP TO DETAILS</h1>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                        <a href="#" class="btn btn-small btn-theme-border-color top-cta btn-block">REQUEST CHANGE TO THIS ADDRESS</a>
+                        </div>
+                        <div class="col-md-7 col-xs-12">
+                            <div class="heading-title-alt text-left">
+                                <h3 class="text-uppercase text-regular">Eastman Chemical - Bldg 177 - 100 North Eastman Road BLDG 177 Kingsport, TN 37662 US</h3>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Tax Exempt Status</span>
+                                <h4 class="text-uppercase text-regular">Exempt</h4>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Tax Cert</span>
+                                <h4 class="text-uppercase text-regular">Needed</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12">   
+                            <table class="top-table table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Account Number:</th>
+                                        <td>191046</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Business Phone:</th>
+                                        <td>919.835.1778</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mobile Phone:</th>
+                                        <td>555.555.5555</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Fax Number:</th>
+                                        <td>555.555.5555</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="divider d-solid d-single ">
+                        </div>
+                        
+                        <div class="col-md-6 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h3>Email Notifications</h3>
+                                 </div>
+                        </div>   
+                         <div class="col-md-12 col-sm-12">   
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Email Notification</th>
+                                        <th>Contacts Who Receive This Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for i in "1" %}
+                                        {% include '_email-notifications-row.html' %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--body content end-->
+        
+{% endblock content%}

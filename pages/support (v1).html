@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Support</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1>Support</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                            <a href="#" class="btn btn-small btn-theme-border-color top-cta btn-block">CREATE A SUPPORT REQUEST</a>
+                        </div>
+                    </div>
+                    <div class="row heading-title-alt">
+        
+                        <div class="col-md-9 col-xs-12">
+                            <div class="heading-title-alt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h3>My Support Requests</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-xs-12">
+                            <input type="text" id="searchbox" class="form-control list-filter" placeholder="Search Orders">
+                            <div style="float: right; padding-right: 30px">
+                                <label for="length_change">Items per page: </label>
+                                <select name='length_change' id='length_change' class="input-sm">
+                                    <option value='10'>10</option>
+                                    <option value='50'>50</option>
+                                    <option value='100'>100</option>
+                                    <option value='200'>200</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-xs-12 table-scroll table-list">
+                            <table id="example" class="display table table-simple table-scroll" cellspacing="0" width="100%">
+
+                                <thead>
+                                    <tr class="lot">
+                                        <th>Support ID #</th>
+                                        <th>Issue</th>
+                                        <th>Related PO #</th>
+                                        <th>Date Created</th>
+                                        <th>Status</th>
+                                        <th class="td-center">Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   {% for i in "1234567891" %}
+                                        {% include '_supportrequest-row.html' %}
+                                    {% endfor %} 
+                                </tbody>
+                            </table>
+                            
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    $('#example').DataTable();
+                                } );
+                              </script>
+                              <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        var dataTable = $('#example').dataTable();
+                                        $("#searchbox").keyup(function() {
+                                        dataTable.fnFilter(this.value);
+                                    });    
+                                });
+                            </script>
+
+
+                            <script type="text/javascript">
+                            var oTable = $('#example').DataTable({});
+
+                                </script>
+                                          
+                            <script type="text/javascript">
+                                          $('#length_change').change( function() { 
+                                oTable.page.len( $(this).val() ).draw();
+                            });     
+                                </script>   
+                        </div>
+
+                        <div class="divider d-solid d-single no-mobile"></div>
+                        
+                        <div class="col-md-12 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h2>Your ChemPoint Team</h2>
+                                 </div>
+                        </div>                   
+                        <div class="row testimonials">
+                            <!--testimonials start-->
+                            <div class="testimonials col-md-6 col-sm-6">
+                                <div class="team-pic">
+                                    <a href="#">
+                                        <img src="static/img/lightbulb.jpg" alt="New Product Questions">
+                                    </a>
+                                </div>
+                                <div class="team-info"><p><strong>PRODUCT QUESTIONS</strong><br />
+                                    Connor Cahill<br />
+                                    Sales Professional <br />
+                                    555.555.5555 (phone)<br />
+                                    <a href "mailto:Connor.Cahill@chempoint.com">Connor.Cahill@chempoint.com</a></p>
+                                </div>
+                            </div>
+                            <div class="testimonials col-md-6 col-sm-6">
+                                <div class="team-pic">
+                                    <a href="#">
+                                        <img src="static/img/order_questions.jpg" alt="Order Questions">
+                                    </a>
+                                </div>
+                                <div class="team-info"><p><strong>ORDER QUESTIONS</strong><br />
+                                    Customer Solutions Specialist<br />
+                                    555.555.5555 (phone)<br />
+                                    444.444.4444 (fax)<br />
+                                    <a href "mailto:customer.solutions@email.com">Customer.Solutions@ChemPoint.com</a></p>
+                                    </div>
+                            </div>
+                            <!--testimonials end-->
+                        </div>
+                        <div class="divider d-solid d-single no-mobile"></div>  
+
+                 
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+
+{% endblock content%}

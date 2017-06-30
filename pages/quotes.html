@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>My Quotes</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1>Quotes</h1>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 col-xs-12">
+                            <input type="text" id="searchbox" class="form-control list-filter" placeholder="Search Quotes">
+                            <div style="float: right; padding-right: 30px">
+                                <label for="length_change">Items per page: </label>
+                                <select name='length_change' id='length_change' class="input-sm">
+                                    <option value='10'>10</option>
+                                    <option value='50'>50</option>
+                                    <option value='100'>100</option>
+                                    <option value='200'>200</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    
+
+                        <div class="col-md-12 table-scroll table-list">
+                            <table id="example" class="display table table-simple table-money table-scroll" cellspacing="0" width="100%">
+
+                                <thead>
+                                    <tr class="lot">
+                                        <th id="first-item">SKU</th>
+                                        <th id="first-item">Product</th>
+                                        <th id="first-item">Manufacturer</th>
+                                        <th id="first-item">My Product Code</th>
+                                        <th id="first-item">My Product Name</th>
+                                        <th id="first-item">MOQ</th>
+                                        <th>Price Per lb</th>
+                                        <th>Price Per SKU</th>
+                                        <th class="td-center">Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   {% for i in "1234567891" %}
+                                        {% include '_quote-row.html' %}
+                                    {% endfor %} 
+                                </tbody>
+                            </table>
+                            
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    $('#example').DataTable();
+                                } );
+                              </script>
+                              <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        var dataTable = $('#example').dataTable();
+                                        $("#searchbox").keyup(function() {
+                                        dataTable.fnFilter(this.value);
+                                    });    
+                                });
+                            </script>
+
+                            <script type="text/javascript">
+                            var oTable = $('#example').DataTable({});
+
+                                </script>
+                                          
+                            <script type="text/javascript">
+                                          $('#length_change').change( function() { 
+                                oTable.page.len( $(this).val() ).draw();
+                            });     
+                                </script>     
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+
+{% endblock content%}

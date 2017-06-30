@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Support</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1 class="heading-title">Support Requests</h1>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                                                             
+                    <div class="row testimonials">
+                        <!--testimonials start-->
+                        <div class="testimonials col-md-6 col-sm-6">
+                            <div class="team-pic">
+                                <a href="#">
+                                    <img src="static/img/lightbulb.jpg" alt="New Product Questions">
+                                </a>
+                            </div>
+                            <div class="team-info"><p><strong>PRODUCT QUESTIONS</strong><br />
+                                Connor Cahill<br />
+                                Sales Professional <br />
+                                555.555.5555 (phone)<br />
+                                <a href "mailto:Connor.Cahill@chempoint.com">Connor.Cahill@chempoint.com</a></p>
+                            </div>
+                        </div>
+                        <div class="testimonials col-md-6 col-sm-6">
+                            <div class="team-pic">
+                                <a href="#">
+                                    <img src="static/img/order_questions.jpg" alt="Order Questions">
+                                </a>
+                            </div>
+                            <div class="team-info"><p><strong>ORDER QUESTIONS</strong><br />
+                                Customer Solutions Specialist<br />
+                                555.555.5555 (phone)<br />
+                                444.444.4444 (fax)<br />
+                                <a href "mailto:customer.solutions@email.com">Customer.Solutions@ChemPoint.com</a></p>
+                                </div>
+                        </div>
+                        <!--testimonials end-->
+                    </div>
+                    <div class="divider d-solid d-single no-mobile"></div>  
+
+
+
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                                <section class="normal-tabs line-tab">
+                                    <div class="panel-body">
+                                        <div class="tab-content">
+                                            <div class="form-group">
+                                                <p>Add paragraph text to explain to customer support process/SLA Add paragraph text to explain to customer support process/SLA</p>
+                                            </div>
+
+                                            
+                                                <label for="form-field-name">How can we help?</label>
+                                                <!-- Name -->
+                                                <input type="text" name="name" id="form-field-name" class="form-control" maxlength="100" required="" data-error="You must enter name">
+                                                <div class="help-block with-errors"></div>
+                                                
+                                                <section class="btn btn-small btn-theme-border-color js-navbar-sticky">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div>
+                                                                <dl class="toggle">
+                                                                    <dt>
+                                                                        <a>Account Menu</a>
+                                                                    </dt>
+                                                                    <dd style="display: block;">
+                                                                        <a href="/index.html">Home</a><br />
+                                                                        <a href="/orders.html">Orders</a><br />
+                                                                        <a href="/new-order.html">New Order</a><br />
+                                                                        <a href="/quotes.html">Quotes</a><br />
+                                                                        <a href="/documents.html">Documents</a><br />
+                                                                        <a href="/account.html">Account Details</a><br />
+                                                                        <a href="/support-requests.html">Support Requests</a><br />
+                                                                        <a href="/profile.html">View Profile</a><br />
+                                                                        <a href="#">Logout</a> 
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                    
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-block dropdown-toggle account-name btn-theme-border-color" type="button" data-toggle="dropdown">Account: Vallen - Raleigh, NC
+                                                          <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">General Inquiry</a></li>
+                                                            <li><a href="#">Order Questions/Issue</a></li>
+                                                            <li><a href="#">Product Document Request</a></li>
+                                                            <li><a href="#">Request Change to Account Info </a></li>
+                                                            <li><a href="#">Request Change to Contact Info</a></li>
+                                                            <li><a href="#">Request Product Quote</a></li>
+                                                            <li><a href="#">Request Product Sample</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <script type="text/javascript">
+                                                        $('section .dropdown-toggle').dropdown(); 
+                                                    </script>     
+                                                
+                                            
+
+                                            <div class="form-group">
+                                                <input type="password" name="login-form-password" value="" class="form-control " placeholder="Password">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button class="btn btn-small btn-dark-solid full-width">LOGIN
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+
+
+                 
+
+
+
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+
+{% endblock content%}

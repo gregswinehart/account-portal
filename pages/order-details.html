@@ -1,0 +1,305 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Order Details</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1>Order Details</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            
+                                <button type="button" class="btn btn-small btn-theme-border-color top-cta">REQUEST CHANGE OR UPDATE</button>
+                                <button type="button" class="btn btn-small btn-theme-border-color top-cta">REORDER</button>
+                        
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 col-sm-6 col-xs-12"> 
+
+
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Purchase Order #</span>
+                                <h2 class="text-uppercase text-regular">VERBAL WAYNE-15</h2>
+                                <span class="text-uppercase">Chempoint Order #: 3039150</span>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Submission Date</span>
+                                <h3 class="text-uppercase text-regular">Dec 25, 2017</h3>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Order Status</span>
+                                <h3 class="text-uppercase text-regular">SHIPPED</h3>
+                            </div>   
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Ship From</span>
+                                <h6>Concord, CA 94518, USA</h6>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Ship To</span>
+                                <h6>Vallen, 2820 Yonkers Rd, Raleigh, NC  27604-3230, USA</h6>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Special Instructions</span>
+                                <h6>When you get to the warehouse, don’t look Billy in the eye, he hates that. Alec, however, will demand unwavering eye contact the entire time you’re there. Just go with it.  </h6>
+                            </div> 
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Requested Ship Date</span>
+                                <h6>6/23/2016</h6>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Requested Delivery Date</span>
+                                <h6>6/23/2016</h6>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Freight Terms</span>
+                                <h6>Chempoint Arranged</h6>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-6 col-xs-12 price-summary order-summary round-5"> 
+                            <!-- <h4>Order Summary</h4> -->
+                            <table class="top-table table table-simple table-money text-right" >
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Subtotal:</th>
+                                        <td>$334,567.O045</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Shipping:</th>
+                                        <td>$5.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Processing/Fees:</th>
+                                        <td>$100.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tax:</th>
+                                        <td>Exempt</td>
+                                    </tr>
+                                </tbody>      
+                            </table>
+                            <table class="top-table table table-simple table-money table-total text-right" >
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Order Total:</th>
+                                        <td>$334,572.0000</td>
+                                    </tr>       
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                    <div class="divider d-solid d-single "></div>
+                        
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h2>Shipment 1 of 2</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left">
+                                <p>Shipment Status: Shipped<br>
+                                Ship Date: 5/5/2017<br>
+                                Expected Delivery Date: 5/6/2017<br>
+                                Shipping Mode: Parcel<br>
+                                Carrier: FEDEX </p>  
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left">
+                                <p>Freight Service: Ground<br>
+                                Tracking/PRO: <br>
+                                Freight Cost: $5 <br>
+                                Bill of Lading: Download from FEDEX</p>  
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                             <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">DOWNLOAD INVOICE</button>
+                            <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">ASK ABOUT THIS SHIPMENT</button>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 table-scroll">   
+                            <table class="table table-simple table-money">
+                                <thead>
+                                    <tr>
+                                        <th id="first-item">Product</th>
+                                        <th>Quantity</th>
+                                        <th class="lot">Price Per SKU</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for i in "123" %}
+                                        {% include '_product-row.html' %}
+                                    {% endfor %} 
+                                    <tr>
+                                        <td id="last-item">
+                                            <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
+                                            <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
+                                            Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
+                                            Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
+                                            </div>  
+                                        </td>
+                                        <td>20</td>
+                                        <td>$16.8431</td>
+                                        <td>$336.8634</td>  
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4 col-md-offset-8 col-xs-12 shipment-summary"> 
+                            <table class="table table-simple table-money text-right" >
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Subtotal:</th>
+                                        <td>$334,567.O045</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Shipping:</th>
+                                        <td>$5.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Processing/Fees:</th>
+                                        <td>$100.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tax:</th>
+                                        <td>Exempt</td>
+                                    </tr>
+                                </tbody>      
+                            </table>
+                            <table class="top-table table table-simple table-money table-total text-right" >
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Shipment Total:</th>
+                                        <td>$334,572.0000</td>
+                                    </tr>       
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                    <div class="divider d-solid d-single-light"></div>
+                        
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h2>Shipment 2 of 2</h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left">
+                                <p>Shipment Status: Shipped<br>
+                                Ship Date: 5/5/2017<br>
+                                Expected Delivery Date: 5/6/2017<br>
+                                Shipping Mode: Parcel<br>
+                                Carrier: FEDEX </p>  
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left">
+                                <p>Freight Service: Ground<br>
+                                Tracking/PRO: <br>
+                                Freight Cost: $5 <br>
+                                Bill of Lading: Download from FEDEX</p>  
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                             <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">DOWNLOAD INVOICE</button>
+                            <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">ASK ABOUT THIS SHIPMENT</button>
+                        </div>
+
+                        
+
+                        <div class="col-md-12 col-sm-12 table-scroll">   
+                            <table class="table table-simple table-money">
+                                <thead>
+                                    <tr>
+                                        <th id="first-item">Product</th>
+                                        <th>Quantity</th>
+                                        <th class="lot">Price Per SKU</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for i in "123" %}
+                                        {% include '_product-row.html' %}
+                                    {% endfor %} 
+                                    <tr>
+                                        <td id="last-item">
+                                            <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
+                                            <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
+                                            Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
+                                            Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
+                                            </div>  
+                                        </td>
+                                        <td>20</td>
+                                        <td>$16.8431</td>
+                                        <td>$336.8634</td>  
+                                    </tr> 
+                                </tbody>
+                            </table>
+                            <div class="col-md-4 col-md-offset-8 col-xs-12 shipment-summary"> 
+                            <table class="table table-simple table-money text-right" >
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Subtotal:</th>
+                                        <td>$334,567.O045</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Shipping:</th>
+                                        <td>$5.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Processing/Fees:</th>
+                                        <td>$100.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tax:</th>
+                                        <td>Exempt</td>
+                                    </tr>
+                                </tbody>      
+                            </table>
+                            <table class="top-table table table-simple table-money table-total text-right" >
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Shipment Total:</th>
+                                        <td>$334,572.0000</td>
+                                    </tr>       
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+        
+{% endblock content%}

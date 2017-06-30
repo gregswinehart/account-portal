@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Orders</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1>Orders</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <input type="text" id="searchbox" class="form-control list-filter" placeholder="Search Orders">
+                            <div style="float: right; padding-right: 30px">
+                                <label for="length_change">Items per page: </label>
+                                <select name='length_change' id='length_change' class="input-sm">
+                                    <option value='10'>10</option>
+                                    <option value='50'>50</option>
+                                    <option value='100'>100</option>
+                                    <option value='200'>200</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12 table-scroll table-list">
+                            <table id="example" class="display table table-simple table-scroll" cellspacing="0" width="100%">
+
+                                <thead>
+                                    <tr class="lot">
+                                        <th>Order Date</th>
+                                        <th>PO</th>
+                                        <th>Order Status</th>
+                                        <th>Est. Ship Date</th>
+                                        <th>Ship To</th>
+                                        <th>CP Order #</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   {% for i in "1234567891" %}
+                                        {% include '_order-row.html' %}
+                                    {% endfor %} 
+                                </tbody>
+                            </table>
+                            
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    $('#example').DataTable();
+                                } );
+                              </script>
+                              <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        var dataTable = $('#example').dataTable();
+                                        $("#searchbox").keyup(function() {
+                                        dataTable.fnFilter(this.value);
+                                    });    
+                                });
+                            </script>
+
+
+                            <script type="text/javascript">
+                            var oTable = $('#example').DataTable({});
+
+                                </script>
+                                          
+                            <script type="text/javascript">
+                                          $('#length_change').change( function() { 
+                                oTable.page.len( $(this).val() ).draw();
+                            });     
+                                </script>     
+
+                 
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+
+{% endblock content%}

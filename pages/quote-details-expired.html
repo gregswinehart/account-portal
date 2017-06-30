@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Quote Details</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1>Quote Details</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-xs-12">
+                            <button type="button" class="btn btn-small btn-theme-border-color top-cta">REQUEST AN UPDATED QUOTE</button>
+                            <button type="button" class="btn btn-small btn-theme-border-color top-cta">ASK A QUESTION</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12"> 
+                            
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Quote #</span>
+                                <h2 class="text-uppercase text-regular">8239872</h2>
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Expiration Date</span>
+                                <h3 class="text-uppercase text-regular">EXPIRED 12/25/2016</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12"> 
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">My Product Name</span>
+                                <h4 class="text-uppercase text-regular">2 oz. Tube</h4>
+                            </div>   
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">My Product Code</span>
+                                <h4>546AS5D4F</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    
+                    
+                    <div class="divider d-solid d-single "></div>
+                        
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h2>Product Pricing</h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 table-scroll table-end">   
+                            <table class="table table-simple table-money">
+                                <thead>
+                                    <tr class="lot">
+                                        <th id="first-item">MOQ</th>
+                                        <th id="first-item">SKU</th>
+                                        <th id="first-item">SKU Description</th>
+                                        <th id="first-item">Currency</th>
+                                        <th>Product Price/UOM</th>
+                                        <th>Product Price/SKU</th>
+                                        <th>Extended MOQ Price </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for i in "1" %}
+                                        {% include '_quote-details-row.html' %}
+                                    {% endfor %} 
+                                </tbody>
+                            </table>
+                            <a href="#" class="btn btn-small btn-theme-border-color">VIEW PRODUCT DOCUMENTS</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="divider d-solid d-single-light"></div>
+                        
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h2>Shipping and Handling</h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Freight Terms</span>
+                                    <p>ChemPoint Freight</p>  
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">INCO Terms</span>
+                                    <p>DDP</p>  
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">F.O.B. Point</span>
+                                    <p>Rinchem Warehouse, Bensalem, PA  19020-5916</p>  
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Handling Details</span>
+                                    <p>HAZMAT: Yes<br>
+                                    Temperature Control: No<br>
+                                    Protect from Freezing: Yes<br>
+                                    U.N. Number: XXX.XX.XXXX</p>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Main</span>
+                                <p>Vallen - Raleigh, NC, 2820 Yonkers Rd Raleigh, NC 27604-3230, USA  
+                                </p>  
+                            </div>
+                            <div class="heading-title-alt text-left">                        
+                                <span class="heading-sub-title text-uppercase theme-color">Billing Address</span>
+                                    <p>Vallen - Raleigh, NC, 1234 Brian Ward Avenue, Suite 14, Wardtown, WA 98020 </p>  
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Ship To Address</span>
+                                    <p>Vallen - Raleigh, NC191046 - Eastman Chemical - Bldg 177 - 100 North Eastman Road BLDG 177 Kingsport, TN 37662 US 
+                                    </p>  
+                            </div>
+                            <div class="heading-title-alt text-left">
+                                <div class="text-left">
+                                <span class="heading-sub-title text-uppercase theme-color">Final Destination Address</span>
+                                    <p>Vallen - Raleigh, NC, 1234 Fake Address Rd, Allentown, PA 02647</p>  
+                            </div>
+                        </div>
+                        
+                        
+
+                        
+
+                        
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+        
+{% endblock content%}
