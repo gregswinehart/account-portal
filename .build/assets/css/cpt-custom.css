@@ -75,11 +75,11 @@ padding: 0 0 0 16px;
 .team-pic img {
 	float: left;
 	margin-right: 30px;
-	margin-left: 30px;
+	margin-left: 0px;
 }
 
 .team-pic p {
-	line-height: 26px;
+	line-height: 24px;
 }
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
@@ -98,6 +98,13 @@ padding: 0 0 0 16px;
 	    font-family: 'pluto_sans';
 	    font-size: 14px;
 	    color: #333;
+}
+
+.main-address p {
+	text-align: right;
+	font-size: 14px;
+	line-height: 20px;
+    color: #333;
 }
 
 .heading-title h1, .heading-title h2, .heading-title h3, .heading-title h4, .heading-title h5, .heading-title h6 {
@@ -908,8 +915,9 @@ select {
 .login .form-group button {
 	margin-bottom: 0px;
 }
-
-
+.alert {
+margin: 0 auto 30px;
+}
 
 /*********************************************************
 footer
@@ -1050,7 +1058,7 @@ Media Queries
 
 @media only screen and (max-width: 480px) {
 	
-/*	.testimonials {
+	.testimonials {
 		text-align: center;
 	}
 	.team-info p {
@@ -1064,7 +1072,7 @@ Media Queries
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
-	}*/
+	}
 	.hero {
 		min-height: 400px;
 		background-size: cover;
@@ -1107,6 +1115,20 @@ Media Queries
 		padding-right: 15px;
 	}
 }
+@media only screen and (max-width: 992px) {
+	.team-pic img {
+		float: none;
+		margin-bottom: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.team-info p {
+		line-height: 26px;
+		text-align: center;
+	}
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -1120,18 +1142,7 @@ Media Queries
 	 	display: none;
 	}
 
-	.team-pic img {
-		float: none;
-		margin-bottom: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
-
-	.team-info p {
-		line-height: 26px;
-		text-align: center;
-	}
+	
 
 	.account-name {
 		margin: auto;
@@ -1228,7 +1239,9 @@ Media Queries
         border: none;
         font-size: 10px;
     } 
- 
+ 	
+
+
 }
 
 
