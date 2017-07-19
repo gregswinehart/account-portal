@@ -75,7 +75,7 @@ padding: 0 0 0 16px;
 .team-pic img {
 	float: left;
 	margin-right: 30px;
-	margin-left: 0px;
+	margin-left: 15px;
 }
 
 .team-pic p {
@@ -95,16 +95,29 @@ padding: 0 0 0 16px;
 }
 
 .main-nav > li > a {
-	    font-family: 'pluto_sans';
+	    font-family: 'pluto_sans_bold';
 	    font-size: 14px;
-	    color: #333;
+	    color: #0099d8;
+}
+
+
+
+.main-nav > li > a:hover {
+	    font-family: 'pluto_sans_bold';
+	    font-size: 14px;
+	    color: #231F20 !important;
+}
+
+.top-nav > li > a:hover {
+	    color: #231F20 !important;
 }
 
 .main-address p {
+	font-family: 'pluto_sans';
 	text-align: right;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 20px;
-    color: #333;
+    color: #444;
 }
 
 .heading-title h1, .heading-title h2, .heading-title h3, .heading-title h4, .heading-title h5, .heading-title h6 {
@@ -121,12 +134,9 @@ padding: 0 0 0 16px;
 	font-size: 15px
 }
 
-
-
 .heading-title-alt p {
 	margin-bottom: 0px;
 }
-
 
 .logo-brand {
 	margin-right: 8px;
@@ -320,10 +330,14 @@ section.page-title {
 
 .breadcrumb li > a:hover {
 	color: #ffffff;	
+	padding-bottom: 2px; 
+	border-bottom: 1px solid #ffffff;	
 }
 
 .breadcrumb > .active {
 	color: #ffffff;	
+	padding-bottom: 2px;
+	border-bottom: 1px solid #ffffff;	
 }
 
 .page-title .breadcrumb {
@@ -540,9 +554,8 @@ button, input, select, textarea {
 }
 
 .btn-extra-small {
-	font-size: 10px;
+	font-size: 12px;
 	padding: 1px 5px;
-	margin-left: 20px;
 }
 
 .btn-small {
@@ -743,7 +756,7 @@ a, .btn {
 
 .fa.fa-chevron-right.fa-stack-1x {
     padding: 1px 0 0 2px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .secondary-icon {
@@ -917,6 +930,22 @@ select {
 }
 .alert {
 margin: 0 auto 30px;
+}
+.column-icon {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+
+}
+.column-icon img {
+	width: 60%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.column-icon p {
+	line-height: 24px;
+	text-align: center;
 }
 
 /*********************************************************

@@ -1,8 +1,87 @@
 {% extends "base.html" %}
+
+{% block header %}
+    <title>Page Not Available (404)</title>
+{% endblock header%}
+
 {% block content %}
 
-<p>
-	404 - Sorry the page could not be found on this server. 
-</p>
+<section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
 
+                        <div class="col-md-12 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1>PAGE NOT AVAILABLE. <div style="font-size:18px;""> (404)</div></h1>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1 style="color: #0099d8;">BUT WE ARE.</h1>
+                            </div>
+                            <div class="text-left">
+                                <p>Our marketing, sales, and support teams are integrated and centrally located, allowing us to promptly and effectively assist you throughout the development and purchase process.</p>
+                            </div>
+
+                                               
+                            <!--testimonials start-->
+                            <div class="column-icon col-md-4 col-sm-6">
+                                <div>
+                                    <a href="#">
+                                        <img src="static/img/lightbulb.jpg" alt="New Product Questions">
+                                    </a>
+                                </div>
+                                <div><p><a href="#"><strong>Talk To A Sales Representative</strong></a></p>
+                                </div>
+                            </div>
+                            <div class="column-icon col-md-4 col-sm-6">
+                                <div>
+                                    <a href="#">
+                                        <img src="static/img/order_questions.jpg" alt="Order Questions">
+                                    </a>
+                                </div>
+                                <div>
+                                    <p><a href="#"><strong>Learn About ChemPoint</strong></a></p>
+                                </div>
+                            </div>
+                            <div class="column-icon col-md-4 col-sm-6">
+                                <div>
+                                    <a href="#">
+                                        <img src="static/img/order_questions.jpg" alt="Order Questions">
+                                    </a>
+                                </div>
+                                <div>
+                                    <p><a href="#"><strong>Browse Our Product Catalog</strong></a></p>
+                                </div>
+                            </div>
+                        
+                    <!--testimonials end-->
+
+
+                            <p><strong>NORTH AMERICA</strong><br>                                   
+                            425.372.9564<br>
+                            <a href="mailto:sales@chempoint.com">SALES@CHEMPOINT.COM</a></p>
+                        
+                            <p><strong>EMEA</strong><br>
+                            TOLL FREE 800.2436.7646<br>
+                            <a href="mailto:sales@chempoint.com">SALES@CHEMPOINT.COM</a></p>
+                        
+                        </div>
+
+                        <div class="col-md-5 col-xs-12">   
+                                <img style="width: 180%;" src="/static/img/404.jpg">
+                         </div>
+
+
+
+
+
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
 {% endblock %}

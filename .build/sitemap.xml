@@ -86,7 +86,17 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/login-create-password-1a error.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/login-create-password-2.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/login-create-password-error.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -111,12 +121,22 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/login-request-access.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/login-reset-password-1.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>/login-reset-password-2.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/login-reset-password-error.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
