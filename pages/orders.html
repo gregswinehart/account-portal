@@ -12,14 +12,14 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-4 col-xs-12">
+                        <div class="col-md-2 col-sm-2 col-xs-12">
                             <div class="text-left text-uppercase">
                                 <h1>Orders</h1>
                             </div>
                         </div>
-                        <div class="col-md-8 col-xs-12">
+                        <div class="col-md-10  col-sm-10 col-xs-12">
                             <input type="text" id="searchbox" class="form-control list-filter" placeholder="Search Orders">
-                            <div style="float: right; padding-right: 30px">
+                            <div class="list-number">
                                 <label for="length_change">Items per page: </label>
                                 <select name='length_change' id='length_change' class="input-sm">
                                     <option value='10'>10</option>
@@ -76,6 +76,13 @@
                             });     
                                 </script>     
 
+                                <script type="text/javascript">
+
+
+$('table').DataTable({
+   "dom": '<"row"<"col-sm-4"l><"col-sm-4 text-center"p><"col-sm-4"f>>tip'
+});
+                                </script>  
                  
 
 

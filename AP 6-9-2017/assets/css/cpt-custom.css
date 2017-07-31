@@ -1,0 +1,896 @@
+/*------------------------------------------------------------------
+Author's custom styles
+========================================================================== */
+@font-face {
+    font-family: 'pluto_sans';
+    src: url('http://www.chempoint.com/ChemPoint/fonts/plutosansregular-webfont.eot');
+    src: url('http://www.chempoint.com/ChemPoint/fonts/plutosansregular-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.chempoint.com/ChemPoint/fonts/plutosansregular-webfont.woff') format('woff'), url('http://www.chempoint.com/ChemPoint/fonts/plutosansregular-webfont.ttf') format('truetype'), url('http://www.chempoint.com/ChemPoint/fonts/plutosansregular-webfont.svg#pluto_sans_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pluto_sans_bold';
+    src: url('http://www.chempoint.com/ChemPoint/fonts/plutosansbold-webfont.eot');
+    src: url('http://www.chempoint.com/ChemPoint/fonts/plutosansbold-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.chempoint.com/ChemPoint/fonts/plutosansbold-webfont.woff') format('woff'), url('http://www.chempoint.com/ChemPoint/fonts/plutosansbold-webfont.ttf') format('truetype'), url('http://www.chempoint.com/ChemPoint/fonts/plutosansbold-webfont.svg#pluto_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*------------------------------------------------------------------
+   Social media icon fonts from Fontfabric (www.fontfabric.com)
+   ========================================================================== */
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('http://www.chempoint.com/ChemPoint/fonts/socialico-webfont.eot');
+    src: url('http://www.chempoint.com/ChemPoint/fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.chempoint.com/ChemPoint/fonts/socialico-webfont.woff') format('woff'), url('http://www.chempoint.com/ChemPoint/fonts/socialico-webfont.ttf') format('truetype'), url('http://www.chempoint.com/ChemPoint/fonts/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'socialico_plusregular';
+    src: url('http://www.chempoint.com/ChemPoint/fonts/socialico_plus-webfont.eot');
+    src: url('http://www.chempoint.com/ChemPoint/fonts/socialico_plus-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.chempoint.com/ChemPoint/fonts/socialico_plus-webfont.woff') format('woff'), url('http://www.chempoint.com/ChemPoint/fonts/socialico_plus-webfont.ttf') format('truetype'), url('http://www.chempoint.com/ChemPoint/fonts/socialico_plus-webfont.svg#socialico_plusregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*------------------------------------------------------------------
+CPt Custom  Stylesheet
+-------------------------------------------------------------------*/
+.logo-brand img {
+    top: 3px;
+}
+
+.gradient {
+	background: #0099d8;
+	/* Old browsers */
+	background: -moz-linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0099d8), color-stop(100%, #00cdff));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+	/* IE10+ */
+	background: linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0099d8', endColorstr='#00cdff', GradientType=1 );
+	/* IE6-9 fallback on horizontal gradient */
+}
+
+.blend_bg {
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.menuzord-menu > li > a  {
+	padding: 0 10px;
+}
+
+.team-pic img {
+	float: left;
+	margin-right: 30px;
+}
+
+.team-pic p {
+	line-height: 26px;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: #F5F1EA;
+}
+
+.top-nav > li > a {
+    font-family: 'pluto_sans_bold';
+	font-size: 10px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-top: 20px;
+	color: #aaa6a0;
+}
+
+.main-nav > li > a {
+	    font-family: 'pluto_sans';
+	    font-size: 14px;
+	    color: #333;
+}
+
+.heading-title h1, .heading-title h2, .heading-title h3, .heading-title h4, .heading-title h5, .heading-title h6, .heading-title-alt h1, .heading-title-alt h2, .heading-title-alt h3, .heading-title-alt h4 {
+	letter-spacing: 0px;
+}
+
+.logo-brand {
+	margin-right: 15px;
+	margin-bottom: 8px;
+}
+
+.l-navbar-wrapper_has-sticky .logo-brand,
+.l-navbar-wrapper_has-sticky .menuzord-menu > li > a {
+    line-height: 95px;
+}
+
+.l-navbar-wrapper_has-sticky .top-nav > li > a {
+    line-height: 10px;
+}
+
+.dropdown-menu {
+	top: 30px !important;
+	right: 15px;
+	left: auto;
+	white-space: normal;
+}
+
+.secondary-nav-mobile {
+	display: none;
+	position: relative;
+}
+
+dl.secondary-nav-mobile {
+	padding: 0px;
+	margin: 0px;
+}
+
+.secondary-nav-mobile > dt {
+	margin-bottom: 0px;
+}
+
+section.page-title.secondary-nav-mobile {
+	padding: 0px;
+}
+
+.l-header {
+	position: relative;
+}
+
+.l-navbar-wrapper_has-sticky .menuzord-menu  > li > a {
+    line-height: 30px;
+}
+
+.menuzord-menu.menuzord-right {
+	float: right;
+	clear: right;
+	text-align: right;
+}
+
+.l-navbar {
+background-color: #F5F1EA;
+}
+
+.page-content {
+	padding: 48px 0;
+}
+
+a,
+.menuzord-menu > li.active > a,
+.menuzord-menu > li:hover > a,
+.portfolio-with-title .portfolio-title h4 a:hover,
+.f-link:hover,
+#footer .f-list li a:hover,
+.featured-item.border-box:hover .icon i,
+.post-single .post-cat li a:hover,
+.post-single .post-desk h4 a:hover,
+.post-single .post-desk a.author:hover,
+.post-list .post-single .post-cat li a,
+.portfolio-description a:hover,
+.portfolio-title a:hover,
+.post-sub-title,
+.team-member .s-link a:hover,
+.t-s-link a:hover,
+.price-col.feature h1,
+.widget-category li a:hover,
+.widget-comments li a:hover,
+.blog-classic .blog-post h4 a:hover,
+.post-meta li a:hover,
+.widget-latest-post .w-desk a:hover,
+.comments-list .comment-author a:hover,
+.comments-list .comment-item-data a:hover,
+.product-title h5 a:hover,
+.comments-list .comment-info a:hover,
+.portfolio-with-title.blog-m .portfolio-title .date a:hover,
+.comments-list .comment-info .comment-author a:hover,
+.icon-tabs .nav-pills > li > a:hover,
+.icon-tabs .nav-pills > li.active > a,
+.icon-tabs .nav-pills > li.active > a:focus,
+.icon-tabs .nav-pills > li.active > a:hover,
+.cd-nav .cd-primary-nav li.selected a,
+.no-touch .cd-nav .cd-primary-nav a:hover,
+.intro-portfolio a:hover {
+	color: #0999D6;
+}	
+
+a {
+	color: #0999D6;
+}
+
+a:hover, a:focus {
+	color: #F05C22;
+}
+
+::selection {
+	color: inherit;
+	background: #F6F1EA;
+}
+
+.l-navbar_t-light {
+    background: #F6F1EA;
+}
+
+section.page-title {
+    padding: 22px 0px;
+    background-image: linear-gradient(90deg, #00AADF 0%, #0999D6 62%);
+}
+
+.secondary-nav {
+	color: #ffffff;
+	text-align: center;
+}
+
+.toggle > dt > a {
+	font-family: 'pluto_sans', Arial, sans-serif;
+	letter-spacing: 0px;
+	text-decoration: none;
+}
+
+.toggle > dt > a:after {
+    content: "\F107";
+    font-family: "FontAwesome";
+	color: #ffffff;
+	right: 15px;
+    -webkit-font-smoothing: antialiased; 
+    speak: none;
+}
+
+.toggle > dt > a:hover, .toggle > dt > a.active {
+	color: #fff;
+	border-color: transparent;
+	background: transparent;
+}
+
+.toggle > dt > a.active:after,
+.toggle > dt > a.active:hover:after {
+    content: "\F106";
+    color: #fff;
+}
+
+.toggle > dd {
+	line-height: 2.5;
+}
+
+.toggle > dd > a {
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.toggle > dt > a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #ffffff;
+	border: none;
+	background: transparent;
+}
+
+.page-title .breadcrumb {
+	position: relative;
+	right: 0px;
+	left: auto;
+	margin-top: 0px;
+}
+
+.breadcrumb li {
+    text-transform: none;
+}
+
+.breadcrumb li > a {
+	color: #ffffff;	
+}
+
+.breadcrumb li > a:hover {
+	color: #ffffff;	
+}
+
+.breadcrumb > .active {
+	color: #ffffff;	
+}
+
+.page-title .breadcrumb {
+	font-size: 13px;
+}
+
+.breadcrumb>li+li:before {
+	padding: 0 10px;
+	color: #63bde3;
+	content: "|"
+}
+
+.user-name  {
+	text-align: left;
+	float: left;
+	margin-right: 0px;
+	padding-left: 15px;
+	padding-right: 0px;
+	border: none;
+	color: #333 !important;
+}
+
+.user-name  a {
+	color: #333;
+}
+
+.user-name  a:hover {
+	color: #F05C22;
+}
+
+.account-name  {
+	float: right;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 15px;
+	border: none;
+}
+
+.body {
+	color: #231F20;
+}
+
+p {
+	color: #231F20;
+}
+
+h1 {
+	line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'pluto_sans_bold', Arial, sans-serif;
+	letter-spacing: 0px;
+}
+
+h2 {
+	font-family: 'pluto_sans_bold', Arial, sans-serif;
+	font-size: 24px;
+}
+
+.heading-sub-title {
+	font-size: 10px;
+	font-weight: bold;
+	color: #333 !important;
+}
+
+.heading-title-alt span {
+	letter-spacing: 1.5px;
+	color: #333;
+}
+
+.heading-title-alt h1 {
+	font-family: 'pluto_sans_bold', Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+}
+
+.theme-color > .heading-title span.heading-sub-title, .heading-title-alt span.heading-sub-title {
+	color: #333 !important;
+}
+
+.text-regular {
+	font-family: 'pluto_sans', Arial, sans-serif;
+}
+
+.heading-title span.heading-sub-title, .heading-title-alt span.heading-sub-title {
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.heading-title span.heading-sub-title, .heading-title-alt span.heading-sub-title {
+	letter-spacing: 1px;
+}
+
+.testimonial .content p {
+	color: #231F20;
+}
+
+.divider.d-single {
+	border-top: 3px solid #323232;
+	margin: 30px 0 30px 0;
+}
+
+.ship-to-address {
+	color: #231F20;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.heading-title-alt {
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+.list p {
+	margin-bottom: 0px;
+}
+
+.btn {
+	white-space: normal;
+	text-transform: capitalize;
+}
+
+button, input, select, textarea {
+	font-family: 'pluto_sans';
+}
+
+.btn-link {
+	color: #333;
+}
+
+.btn-link:hover {
+	color: #F05C22;
+	text-decoration: none;
+}
+
+.btn-link:focus {
+	color: #333;
+	text-decoration: none;
+}
+
+.btn-link:hover {
+	color: #F05C22;
+}
+
+.btn-extra-small {
+	font-size: 10px;
+	padding: 1px 5px;
+	margin-left: 20px;
+}
+
+.btn-small {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.btn-theme-border-color, .widget-social-link a:hover, .widget-tags a:hover {
+	border: 1px solid #63bde3;
+}
+
+.btn-theme-border-color:hover, .price-col.feature .p-btn:hover, .side-social-link a:hover, .massive-progress.progress-theme-color .progress-bar > span:before {
+	border: 1px solid #F05C22;
+}
+
+.btn-theme-color, .btn-dark-solid:hover, .btn-dark-solid:focus, .btn-theme-border-color:hover {
+	color: #F05C22;
+}
+
+a, .btn {
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+
+.accordion.time-line > dt > a:hover:after, .accordion.time-line > dt > a.active:after, .accordion.time-line > dt > a.active:hover:after, .toggle.time-line > dt > a:hover:after, .toggle.time-line > dt > a.active:after, .toggle.time-line > dt > a.active:hover:after, .btn-dark-solid:hover, .btn-dark-solid:focus, .btn-theme-color, .btn-theme-border-color:hover, .btn-light-solid:hover, .feature-border-box:hover .icon, .price-col.feature .p-btn:hover, .side-social-link a:hover, .widget-social-link a:hover, .widget-tags a:hover, .sale-label, .stock .status, .lift-off:hover, .menuzord-menu ul.dropdown li:hover > a, .menuzord-menu > li > .megamenu .megamenu-row li:hover a, .travel-form.icon-tabs .nav-pills > li > a:hover, .travel-form.icon-tabs .nav-pills > li.active:hover > a, .travel-form.icon-tabs .nav-pills > li.active > a, .travel-form.icon-tabs .nav-pills > li.active > a:focus {
+	background: #fff;
+}
+
+.top-cta {
+	float: right;
+	margin-right: 0px;
+}
+
+.top-top-cta {
+	float: right;
+	margin: 8px 0px 8px 15px;
+}
+
+.gray-bg {
+	background-color: #F5F1EA;
+}
+
+.top-table {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.table-scroll {
+	overflow-x: auto;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	padding: 13px 8px;
+}
+
+.table {
+	margin-bottom: 15px;
+}
+
+.table>tbody>tr>td {
+	vertical-align: middle;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th  {
+	border-top: 1px solid #818284;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th .last {
+	border-bottom: 1px solid #818284;
+}
+
+.table>thead>tr>th {
+	border-bottom: 1px solid #818284;
+}
+
+.table-simple td {
+	border-top: 1px solid #fff !important;
+	border-bottom: none !important;
+}
+
+.icon-chevron-down {
+	font-size: 75%;
+	color:#0999D6;
+}
+
+.icon-chevron-down:hover {
+	font-size: 75%;
+	color:#F05C22
+}
+
+.secondary-icon {
+	padding: 1px 0 0 2px; 
+	color: #fff;
+}
+
+.testimonial li {
+	padding: 0 0 30px 0;
+	height: 100%;
+}
+
+.sub-title-first {
+	font-size: 12px;
+	line-height: 20px;
+	padding-right: 14px;
+}
+
+.sub-title {
+	font-size: 12px;
+	line-height: 20px;
+	padding-right: 14px;
+	padding-left: 14px;
+}
+
+.td-center {
+	text-align: center !important;
+}
+
+.testimonials img {
+	display: block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+}
+
+.testimonials .team-info {
+	text-align: left;
+}
+
+.team-info p {
+	line-height: 26px;
+}
+.no-desktop {
+ 	display: none;
+}
+
+.no-mobile {
+	display: block;
+}
+
+
+/*********************************************************
+footer
+*******************************************************/
+
+
+footer {
+    padding: 28px 30px 22px 30px;
+    margin-top: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 98;
+}
+
+    footer a {
+        color: #fff;
+        font-family: 'pluto_sans_bold',Arial,sans-serif;
+    }
+
+        footer a:hover {
+            color: #231f20;
+        }
+
+    footer .contact {
+        margin: 75px 0 26px 0;
+        border-top: solid 4px #fff;
+        border-bottom: solid 1px #fff;
+        padding: 5px 0 5px 0;
+    }
+
+        footer .contact h2 {
+            display: inline-block;
+            width: 286px;
+            margin-top: 23px;
+            vertical-align: top;
+            padding-right: 29px;
+        }
+
+        footer .contact address {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 23px 0 17px 0;
+            font-style: normal;
+        }
+
+    footer .legal {
+        overflow: auto;
+        font-size: 0;
+        letter-spacing: 1px;
+    }
+
+        footer .legal div {
+            float: left;
+            font-size: 12px;
+        }
+
+        footer .legal ul {
+            float: right;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+            footer .legal ul li {
+                display: inline-block;
+            }
+
+                footer .legal ul li a {
+                    font-size: 12px;
+                    padding-left: 10px;
+                    border-left: solid 1px #fff;
+                    margin-left: 10px;
+                    line-height: 1;
+                }
+
+                footer .legal ul li:first-child a {
+                    border-left: none;
+                }
+
+
+    footer .social {
+        overflow: auto;
+        font-size: 0;
+        letter-spacing: 1px;
+    }
+
+        footer .social div {
+            float: left;
+            font-size: 12px;
+        }
+
+        footer .social ul {
+            float: right;
+            margin-top: 12px;
+            padding: 0;
+            list-style: none;
+        }
+
+            footer .social ul li {
+                display: inline-block;
+            }
+
+                footer .social ul li a {
+                    font-size: 12px;
+                    padding-left: 10px;
+                    border-left: none;
+                    margin-left: 10px;
+                    line-height: 1;
+                }
+
+                    footer .social ul li a span:first-child {
+                        font-size: 2.75em;
+                        padding-right: 10px;
+                        text-transform: none;
+                    }
+
+                    footer .social ul li a span.text {
+                        vertical-align: 60%;
+                    }
+
+                    footer .social ul li a span.ico {
+                        font-family: 'socialicoregular';
+                    }
+
+                    footer .social ul li a span.icoplus {
+                        font-family: 'socialico_plusregular';
+                    }
+
+
+
+/*------------------------------------------------------------------
+Media Queries
+-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+	
+/*	.testimonials {
+		text-align: center;
+	}
+	.team-info p {
+		line-height: 26px;
+		text-align: center;
+	}
+
+	.team-pic img {
+		float: none;
+		margin-bottom: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}*/
+
+	.dropdown-menu {
+		margin: 7px 15px;
+		right: inherit;
+	}
+	.dropdown-menu>li>a {
+		white-space: normal;
+	}
+	 .no-desktop {
+	 	display: block;
+	 }
+ 	 .no-mobile {
+	 	display: none;
+	 }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	.menuzord .showhide {
+	    padding: 18px 0 0;
+    }
+	.no-desktop {
+	 	display: block;
+	}
+ 	.no-mobile {
+	 	display: none;
+	}
+
+	.team-pic img {
+		float: none;
+		margin-bottom: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.team-info p {
+		line-height: 26px;
+		text-align: center;
+	}
+
+	.account-name {
+		margin: auto;
+		padding-left: 0px;
+		padding-right: 0px;
+		float: none;
+		text-align: center;
+	}
+
+	.menuzord-menu > li {
+		margin: 0px;
+	}
+
+	.top-nav > li > a {
+		font-size: 13px;
+		font-weight: normal;
+
+	}
+
+	.menuzord-responsive .menuzord-menu > li:first-child > a {
+		border-top: none;
+	}
+
+	.secondary-nav-mobile {
+		display: block;
+	}
+
+	.secondary-nav {
+		display: none;
+	}
+
+	section.page-title.js-navbar-sticky {
+		padding: 20px 0px;
+	}
+
+	section.page-title {
+	    padding: 6px 0px !important;
+		background: #0099d8;
+		/* Old browsers */
+		background: -moz-linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+		/* FF3.6+ */
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0099d8), color-stop(100%, #00cdff));
+		/* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+		/* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+		/* Opera 11.10+ */
+		background: -ms-linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+		/* IE10+ */
+		background: linear-gradient(45deg, #0099d8 0%, #00cdff 100%);
+		/* W3C */
+		filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0099d8', endColorstr='#00cdff', GradientType=1 );
+		/* IE6-9 fallback on horizontal gradient */
+	    margin-top: 0px;
+    }
+
+    section.page-title > .div > .col-md-12 {
+    	padding: 0px;
+    }
+
+    .account-name p {
+    	text-align: center !important;
+    }
+
+    footer h2 {
+        margin: 1em 0;
+    }
+
+    footer .contact {
+        margin: 48px 0 26px;
+    }
+
+    /*footer .contact h2 { margin: 38px 0 15px; }*/
+    /*footer .contact address { padding: 10px 0 32px 0; }*/
+    footer .legal { overflow: visible; }
+    footer .legal div,
+    footer .legal ul { font-size: 10px; float: none; }
+    footer .legal ul li { display: block; }
+    footer .legal ul li a {
+        padding: 0;
+        margin: 0;
+        border: none;
+        font-size: 10px;
+    }    
+
+    footer .social { overflow: visible; }
+    footer .social div,
+    footer .social ul { font-size: 10px; float: none; margin-top: 8px; }
+    footer .social ul li { display: block; padding-bottom: 5px; }
+    footer .social ul li a {
+        padding: 0;
+        margin: 0;
+        border: none;
+        font-size: 10px;
+    } 
+ 
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1170px) {
+	.container {
+		width: 980px;
+	}
+}

@@ -6092,9 +6092,9 @@ Table of contents
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
-    .menuzord-responsive .menuzord-menu.scrollable > .scrollable-fix {
+/*    .menuzord-responsive .menuzord-menu.scrollable > .scrollable-fix {
         display: block;
-    }
+    }*/
     .menuzord-responsive .menuzord-menu > li {
         position: relative; 
         display: block;

@@ -33,6 +33,16 @@ Author's custom styles
 }
 
 
+@media (max-width: 768px) {
+  .btn-small {
+    padding:4px 20px;
+    font-size:80%;
+    line-height: 2;
+    float: left !important;
+    margin-left: 0px !important;
+    margin-right: 15px !important;
+  }
+}
 
 
 /*------------------------------------------------------------------
@@ -41,7 +51,9 @@ CPt Custom  Stylesheet
 .logo-brand img {
     top: 3px;
 }
-
+.border-line {
+	border-top: 3px solid #333;
+}
 .gradient {
 	background: #0099d8;
 	/* Old browsers */
@@ -61,13 +73,18 @@ CPt Custom  Stylesheet
 	/* IE6-9 fallback on horizontal gradient */
 
 }
+.dataTables_paginate {
+	text-align: center !important;
+	float: none;
+}
+
 .blend_bg {
 	color: #fff;
 	font-size: 1.2em;
 }
 
 .menuzord-menu > li > a  {
-padding: 0 0 0 16px;
+padding: 0 0 0 36px;
 }
 .menuzord {
     padding: 0 15px;
@@ -86,12 +103,19 @@ padding: 0 0 0 16px;
 	background-color: #F5F1EA;
 }
 
-.top-nav > li > a {
-    font-family: 'pluto_sans_bold';
-	font-size: 10px;
+.top-nav > li  {
+
 	padding-bottom: 15px;
 	padding-top: 20px;
+	
+}
+
+.top-nav > li > a {
+    font-family: 'pluto_sans_bold';
+	font-size: 11px;
 	color: #aaa6a0;
+	border-right: solid 1px #aaa6a0;
+	padding: 2px 14px 0;
 }
 
 .main-nav > li > a {
@@ -177,6 +201,7 @@ section.page-title.secondary-nav-mobile {
 	padding: 0px;
 }
 
+
 .l-header {
 	position: relative;
 }
@@ -255,7 +280,7 @@ a:hover, a:focus {
 }
 
 section.page-title {
-    padding: 22px 0px;
+    padding: 16px 0px !important;
     background-image: linear-gradient(90deg, #00AADF 0%, #0999D6 62%);
 }
 
@@ -330,8 +355,8 @@ section.page-title {
 
 .breadcrumb li > a:hover {
 	color: #ffffff;	
-	padding-bottom: 2px; 
-	border-bottom: 1px solid #ffffff;	
+	padding-bottom: 4px; 
+	border-bottom: 1px solid #ffffff;
 }
 
 .breadcrumb > .active {
@@ -345,7 +370,7 @@ section.page-title {
 }
 
 .breadcrumb>li+li:before {
-	padding: 0 10px;
+	padding: 0 12px;
 	color: #63bde3;
 	content: "|"
 }
@@ -381,7 +406,7 @@ section.page-title {
 }
 label {
 		font-family: "arial", sans-serif;
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: 400;
 	color: #231F20;
 
@@ -545,7 +570,14 @@ button, input, select, textarea {
 }
 
 .btn-link:focus {
-	color: #333;
+	background-color: #F05C22;
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+.btn-dark-solid:focus {
+	background-color: #F05C22;
+	color: #ffffff !important;
 	text-decoration: none;
 }
 
@@ -592,13 +624,19 @@ button, input, select, textarea {
 	background-color: #F05C22 !important;
 }
 
-
-a, .btn {
-	-webkit-transition: all .2s;
-	transition: all .2s;
+.btn.active, .btn:active {
+    background-image:none;
+    outline:0;
+    -webkit-box-shadow:none;
+    box-shadow:none
 }
 
-.accordion.time-line > dt > a:hover:after, .accordion.time-line > dt > a.active:after, .accordion.time-line > dt > a.active:hover:after, .toggle.time-line > dt > a:hover:after, .toggle.time-line > dt > a.active:after, .toggle.time-line > dt > a.active:hover:after, .btn-dark-solid:hover, .btn-dark-solid:focus, .btn-theme-color, .btn-theme-border-color:hover, .btn-light-solid:hover, .feature-border-box:hover .icon, .price-col.feature .p-btn:hover, .side-social-link a:hover, .widget-social-link a:hover, .widget-tags a:hover, .sale-label, .stock .status, .lift-off:hover, .menuzord-menu ul.dropdown li:hover > a, .menuzord-menu > li > .megamenu .megamenu-row li:hover a, .travel-form.icon-tabs .nav-pills > li > a:hover, .travel-form.icon-tabs .nav-pills > li.active:hover > a, .travel-form.icon-tabs .nav-pills > li.active > a, .travel-form.icon-tabs .nav-pills > li.active > a:focus {
+a, .btn {
+	-webkit-transition: none;
+	transition: none;
+}
+
+.accordion.time-line > dt > a:hover:after, .accordion.time-line > dt > a.active:after, .accordion.time-line > dt > a.active:hover:after, .toggle.time-line > dt > a:hover:after, .toggle.time-line > dt > a.active:after, .toggle.time-line > dt > a.active:hover:after, .btn-theme-color, .btn-theme-border-color:hover, .btn-light-solid:hover, .feature-border-box:hover .icon, .price-col.feature .p-btn:hover, .side-social-link a:hover, .widget-social-link a:hover, .widget-tags a:hover, .sale-label, .stock .status, .lift-off:hover, .menuzord-menu ul.dropdown li:hover > a, .menuzord-menu > li > .megamenu .megamenu-row li:hover a, .travel-form.icon-tabs .nav-pills > li > a:hover, .travel-form.icon-tabs .nav-pills > li.active:hover > a, .travel-form.icon-tabs .nav-pills > li.active > a, .travel-form.icon-tabs .nav-pills > li.active > a:focus {
 	background: #fff;
 }
 
@@ -607,6 +645,10 @@ a, .btn {
 	margin: 0px 0px 8px 15px;
 }
 
+.bottom-cta {
+	float: right;
+	margin: 0px 0px 30px 15px;
+}
 
 .order-summary {
 	background-color: #f8f8f8;
@@ -622,9 +664,11 @@ a, .btn {
 	background-color: #ffffff;
 	padding-left: 20px;
 	border-radius: 0px;
-	padding-right: 0px;
+	float: right;
 	margin-bottom: 45px;
 }
+
+
 
 .top-table {
 	margin-top: 15px;
@@ -657,15 +701,7 @@ a, .btn {
 }
 
 .table-overview {
-		border-top: 3px solid #333;
 		padding-top: 50px;
-/*	background-color: #f8f8f8;
-	margin-top: 45px;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-radius: 0px;
-	float: right;
-	margin-right: 30px;*/
 }
 .table-list {
 	padding-top: 30px;
@@ -674,6 +710,12 @@ a, .btn {
 }
 .table-end {
 	margin-bottom: 20px;
+}
+.table-begin {
+	margin-top: 20px;
+}
+.table-end-no-button {
+	margin-bottom: 50px;
 }
 .table-money>tbody>tr> {
 	padding: 0 8px 8px 8px;
@@ -706,11 +748,11 @@ a, .btn {
 		white-space: nowrap;
 }
 
-#first-item {
+.first-item {
 	text-align: left !important;
 }
 
-#last-item {
+.last-item {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	text-align: left;
@@ -843,6 +885,11 @@ a, .btn {
     border-radius: 0px;
     box-shadow: none;
     font-size: 13px;
+    margin-bottom: 10px;
+}
+.list-number {
+	float: right;
+	padding-right: 30px;
 }
 
 .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
@@ -1087,6 +1134,20 @@ Media Queries
 
 @media only screen and (max-width: 480px) {
 	
+	.btn-small {
+		width: 100% !important;
+	}
+	.list-filter {
+		width: 100%;
+	    margin-bottom: 10px;
+	}
+	.list-number {
+		float: none;
+	    margin-bottom: 10px;
+	    margin-left: auto;
+	    margin-right: auto;	
+	    text-align: center;
+	}
 	.testimonials {
 		text-align: center;
 	}
@@ -1157,51 +1218,26 @@ Media Queries
 		line-height: 26px;
 		text-align: center;
 	}
-}
+	.menuzord-menu > li > a  {
+	padding: 0 0 0 16px;
+	}
 
-
-@media only screen and (max-width: 768px) {
-	.menuzord .showhide {
-	    padding: 18px 0 0;
+    .menuzord-responsive .menuzord-menu.scrollable > .scrollable-fix {
+        display: none;
     }
-	.no-desktop {
-	 	display: block;
-	}
- 	.no-mobile {
-	 	display: none;
-	}
-
-	
-
-	.account-name {
-		margin: auto;
-		padding-left: 0px;
-		padding-right: 0px;
-		float: none;
-		text-align: center;
-	}
-
-	.menuzord-menu > li {
-		margin: 0px;
-	}
-
 	.top-nav > li > a {
-		font-size: 13px;
-		font-weight: normal;
-
+    padding: 2px 14px 0;
 	}
 
-	.menuzord-responsive .menuzord-menu > li:first-child > a {
-		border-top: none;
-	}
-
-	.secondary-nav-mobile {
+		.secondary-nav-mobile {
 		display: block;
+		text-align: center;
 	}
 
 	.secondary-nav {
 		display: none;
 	}
+
 
 	section.page-title.js-navbar-sticky {
 		padding: 20px 0px;
@@ -1236,6 +1272,64 @@ Media Queries
     .account-name p {
     	text-align: center !important;
     }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+	.pagination {
+		float: none !important;
+	}
+	.dataTables_info {
+		text-align: center;
+		}
+
+
+	.menuzord .showhide {
+	    padding: 18px 0 0;
+    }
+	.no-desktop {
+	 	display: block;
+	}
+ 	.no-mobile {
+	 	display: none;
+	}
+
+	.order-summary {
+		float: left;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.shipment-summary {
+		float: left;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.account-name {
+		margin: auto;
+		padding-left: 0px;
+		padding-right: 0px;
+		float: none;
+		text-align: center;
+	}
+
+	.menuzord-menu > li {
+		margin: 0px;
+	}
+
+	.top-nav > li > a {
+		font-size: 13px;
+		font-weight: normal;
+
+	}
+
+	.menuzord-responsive .menuzord-menu > li:first-child > a {
+		border-top: none;
+	}
+
+
 
     footer h2 {
         margin: 1em 0;
@@ -1280,7 +1374,15 @@ Media Queries
 
 @media only screen and (min-width: 1170px) {
 	.container {
-		width: 980px;
+		width: 1080px;
+	}
+	.container.login-page {
+		width: 970px;
+	}
+	.breadcrumb > li + li::before {
+    padding: 0 19px;
+    color: #63bde3;
+    content: "|";
 	}
 }
 

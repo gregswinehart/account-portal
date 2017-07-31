@@ -76,6 +76,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/get-help.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/index.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -121,7 +126,12 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/login-request-access.html</loc>
+        <loc>/login-request-access-1.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/login-request-access-confirm.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -187,11 +197,6 @@
     </url>
     <url>
         <loc>/support (v1).html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/support-requests.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>

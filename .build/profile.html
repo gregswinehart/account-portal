@@ -74,7 +74,7 @@
     <div class="wrapper">
 
         <!--header start-->
-        <header class="l-header">
+        <header class="l-header page">
 
             <div class="l-navbar">
                 <div class="container">
@@ -96,11 +96,11 @@
 
                         <!--mega menu start-->
                         <ul class="menuzord-menu menuzord-right main-nav">
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="https://www.chempoint.com/products">Products</a></li>
+                            <li><a href="https://www.chempoint.com/services">Services</a></li>
+                            <li><a href="https://www.chempoint.com/support">Support</a></li>
+                            <li><a href="https://my.chempoint.com/">My Account</a></li>
+                            <li><a href="https://www.chempoint.com/about">About</a></li>
                             <li class="hidden-sm hidden-md hidden-lg"><a href="#">425.555.5555</a></li>
                             <li class="hidden-sm hidden-md hidden-lg"><a href="/contact.html">Contact Us</a></li>
                         </ul>
@@ -121,13 +121,13 @@
                 <div class="row">
                     <div> 
                         <ol style="padding-left: 45px;" class="breadcrumb secondary-nav">
-                            <li class="active"><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html">Home</a></li>
                             <li><a href="/orders.html">Orders</a></li>
                             <li><a href="/new-order.html">New Order</a></li>
                             <li><a href="/quotes.html">Quotes</a></li>
                             <li><a href="/documents.html">Documents</a></li>
                             <li><a href="/account.html">Account Details</a></li>
-                            <li><a href="/support-requests.html">Support Requests</a></li>
+                            <li><a href="/get-help.html">Get Help</a></li>
                             <li><a href="/profile.html">My Profile</a></li>
                             <li><a href="#">Logout</a></li>
                             <li class="cart-info">
@@ -202,9 +202,67 @@
                                 <a href="/quotes.html">Quotes</a><br />
                                 <a href="/documents.html">Documents</a><br />
                                 <a href="/account.html">Account Details</a><br />
-                                <a href="/support-requests.html">Support Requests</a><br />
+                                <a href="/get-help.html">Get Help</a><br />
                                 <a href="/profile.html">My Profile</a><br />
-                                <a href="#">Logout</a> 
+                                <a href="#">Logout</a><br />
+                                <a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i> (2)</a>
+                                <div class="megamenu megamenu-quarter-width" style="right: 0px; display: none;">
+                                    <div class="megamenu-row">
+                                        <div class="col12">
+
+                                            <!--cart-->
+                                            <table class="table cart-table-list table-responsive">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img src="assets/img/product/1.jpg" alt="">
+                                                        </a>
+                                                    </td>
+                                                    <td><a href="#"> Women's Top</a>
+                                                    </td>
+                                                    <td>X4</td>
+                                                    <td>$ 122.00</td>
+                                                    <td>
+                                                        <a href="#" class="close">
+                                                            <img src="assets/img/product/close.png" alt="">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img src="assets/img/product/2.jpg" alt="">
+                                                        </a>
+                                                    </td>
+                                                    <td><a href="#"> Men's T-shirt</a>
+                                                    </td>
+                                                    <td>X4</td>
+                                                    <td>$ 122.00</td>
+                                                    <td>
+                                                        <a href="#" class="close">
+                                                            <img src="assets/img/product/close.png" alt="">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <div class="total-cart pull-right">
+                                                <ul>
+                                                    <li><span>Sub Total</span>  <span>$ 2000.00 </span>
+                                                    </li>
+                                                    <li><span>Total </span>  <span>$ 2000.00 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="s-cart-btn pull-right">
+                                                <a href="shop-cart.html" class="btn btn-small btn-theme-color"> View cart</a>
+                                                <a href="#" class="btn btn-small btn-dark-solid"> Checkout</a>
+                                            </div>
+                                            <!--cart-->
+
+                                        </div>
+                                    </div>
+                                </div>
                             </dd>
                         </dl>
                     </div>
@@ -265,15 +323,15 @@ $('section .dropdown-toggle').dropdown();
             <div class="page-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="text-left text-uppercase">
                                 <h1 class="text-uppercase">Mary Upchurch</h1>
                                 
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
                             <button type="button" class="btn btn-small btn-theme-border-color top-cta">UPDATE PASSWORD</button>
-                            <button type="button" class="btn btn-small btn-theme-border-color top-cta">CHANGE TO PROFILE</button>
+                            <button type="button" class="btn btn-small btn-theme-border-color top-cta">REQUEST CHANGE TO PROFILE</button>
                         </div>
                     </div>
 
@@ -281,7 +339,7 @@ $('section .dropdown-toggle').dropdown();
                         <div class="col-md-6 col-xs-12">
                             <div class="heading-title-alt text-left">
                                 <span class="heading-sub-title text-uppercase theme-color">Email</span>
-                                <h4 class="text-regular"><a href="mailtorupchurch@hagemeyerna.com"> rupchurch@hagemeyerna.com</a></h4>
+                                <h4 class="text-regular">rupchurch@hagemeyerna.com</h4>
                             </div>
                             <div class="heading-title-alt text-left">
                                 <span class="heading-sub-title text-uppercase theme-color">Business Phone</span>
@@ -298,12 +356,14 @@ $('section .dropdown-toggle').dropdown();
                                 <span class="heading-sub-title text-uppercase theme-color">Fax Number</span>
                                 <h4 class="text-regular"> 555.555.5555</h4>
                             </div>
+
+                        </div>
                            
-                        </div>
+                    </div>
                         
-                        <div class="divider d-solid d-single ">
-                        </div>
-                        
+                    <div class="divider d-solid d-single"></div>
+
+                    <div class="row">
                         <div class="col-md-6 col-xs-12">
                             <div class="text-left text-uppercase">
                                 <h3>Email Notifications</h3>

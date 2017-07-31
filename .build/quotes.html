@@ -74,7 +74,7 @@
     <div class="wrapper">
 
         <!--header start-->
-        <header class="l-header">
+        <header class="l-header page">
 
             <div class="l-navbar">
                 <div class="container">
@@ -96,11 +96,11 @@
 
                         <!--mega menu start-->
                         <ul class="menuzord-menu menuzord-right main-nav">
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="https://www.chempoint.com/products">Products</a></li>
+                            <li><a href="https://www.chempoint.com/services">Services</a></li>
+                            <li><a href="https://www.chempoint.com/support">Support</a></li>
+                            <li><a href="https://my.chempoint.com/">My Account</a></li>
+                            <li><a href="https://www.chempoint.com/about">About</a></li>
                             <li class="hidden-sm hidden-md hidden-lg"><a href="#">425.555.5555</a></li>
                             <li class="hidden-sm hidden-md hidden-lg"><a href="/contact.html">Contact Us</a></li>
                         </ul>
@@ -121,13 +121,13 @@
                 <div class="row">
                     <div> 
                         <ol style="padding-left: 45px;" class="breadcrumb secondary-nav">
-                            <li class="active"><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html">Home</a></li>
                             <li><a href="/orders.html">Orders</a></li>
                             <li><a href="/new-order.html">New Order</a></li>
                             <li><a href="/quotes.html">Quotes</a></li>
                             <li><a href="/documents.html">Documents</a></li>
                             <li><a href="/account.html">Account Details</a></li>
-                            <li><a href="/support-requests.html">Support Requests</a></li>
+                            <li><a href="/get-help.html">Get Help</a></li>
                             <li><a href="/profile.html">My Profile</a></li>
                             <li><a href="#">Logout</a></li>
                             <li class="cart-info">
@@ -202,9 +202,67 @@
                                 <a href="/quotes.html">Quotes</a><br />
                                 <a href="/documents.html">Documents</a><br />
                                 <a href="/account.html">Account Details</a><br />
-                                <a href="/support-requests.html">Support Requests</a><br />
+                                <a href="/get-help.html">Get Help</a><br />
                                 <a href="/profile.html">My Profile</a><br />
-                                <a href="#">Logout</a> 
+                                <a href="#">Logout</a><br />
+                                <a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i> (2)</a>
+                                <div class="megamenu megamenu-quarter-width" style="right: 0px; display: none;">
+                                    <div class="megamenu-row">
+                                        <div class="col12">
+
+                                            <!--cart-->
+                                            <table class="table cart-table-list table-responsive">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img src="assets/img/product/1.jpg" alt="">
+                                                        </a>
+                                                    </td>
+                                                    <td><a href="#"> Women's Top</a>
+                                                    </td>
+                                                    <td>X4</td>
+                                                    <td>$ 122.00</td>
+                                                    <td>
+                                                        <a href="#" class="close">
+                                                            <img src="assets/img/product/close.png" alt="">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img src="assets/img/product/2.jpg" alt="">
+                                                        </a>
+                                                    </td>
+                                                    <td><a href="#"> Men's T-shirt</a>
+                                                    </td>
+                                                    <td>X4</td>
+                                                    <td>$ 122.00</td>
+                                                    <td>
+                                                        <a href="#" class="close">
+                                                            <img src="assets/img/product/close.png" alt="">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <div class="total-cart pull-right">
+                                                <ul>
+                                                    <li><span>Sub Total</span>  <span>$ 2000.00 </span>
+                                                    </li>
+                                                    <li><span>Total </span>  <span>$ 2000.00 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="s-cart-btn pull-right">
+                                                <a href="shop-cart.html" class="btn btn-small btn-theme-color"> View cart</a>
+                                                <a href="#" class="btn btn-small btn-dark-solid"> Checkout</a>
+                                            </div>
+                                            <!--cart-->
+
+                                        </div>
+                                    </div>
+                                </div>
                             </dd>
                         </dl>
                     </div>
@@ -289,15 +347,15 @@ $('section .dropdown-toggle').dropdown();
                     
 
                         <div class="col-md-12 table-scroll table-list">
-                            <table id="example" class="display table table-simple table-money table-scroll" cellspacing="0" width="100%">
+                               <table id="example" class="display table table-simple table-money table-scroll" cellspacing="0" width="100%">
 
                                 <thead>
                                     <tr class="lot">
-                                        <th id="first-item">SKU</th>
-                                        <th id="first-item">Product</th>
-                                        <th id="first-item">Manufacturer</th>
-                                        <th id="first-item">My Product Code</th>
-                                        <th id="first-item">MOQ</th>
+                                        <th class="first-item">SKU</th>
+                                        <th class="first-item">Product</th>
+                                        <th class="first-item">Manufacturer</th>
+                                        <th class="first-item">My Product Code</th>
+                                        <th class="first-item">MOQ</th>
                                         <th>Price Per lb</th>
                                         <th>Price Per SKU</th>
                                         <th class="td-center">Details</th>
@@ -306,11 +364,11 @@ $('section .dropdown-toggle').dropdown();
                                 <tbody>
                                    
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -324,11 +382,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -342,11 +400,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -360,11 +418,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -378,11 +436,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -396,11 +454,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -414,11 +472,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -432,11 +490,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -450,11 +508,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -468,11 +526,11 @@ $('section .dropdown-toggle').dropdown();
 </tr> 
                                     
                                         <tr>
-    <td id="first-item">0111111</td>
-    <td id="first-item">Krytox GPL205 Grease</td>
-    <td id="first-item">Vallen</td>
-    <td id="first-item">546AS5D4F</td>
-    <td id="first-item">40</td>
+    <td class="first-item">0111111</td>
+    <td class="first-item">Krytox GPL205 Grease</td>
+    <td class="first-item">Vallen</td>
+    <td class="first-item">546AS5D4F</td>
+    <td class="first-item">40</td>
     <td>$600.3333</td>
     <td>$32.8884</td> 
     <td class="td-center">
@@ -514,6 +572,27 @@ $('section .dropdown-toggle').dropdown();
                                 </script>     
                         </div>
                     </div>
+                
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10 of 10 entries</div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
+                                <ul class="pagination">
+                                    <li class="paginate_button previous disabled" id="example_previous">
+                                        <a href="#" aria-controls="example" data-dt-idx="0" tabindex="0">Previous</a>
+                                    </li>
+                                    <li class="paginate_button active">
+                                        <a href="#" aria-controls="example" data-dt-idx="1" tabindex="0">1</a>
+                                    </li>
+                                    <li class="paginate_button next disabled" id="example_next"><a href="#" aria-controls="example" data-dt-idx="2" tabindex="0">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                 
 
                     
                 </div>
