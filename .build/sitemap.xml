@@ -76,6 +76,136 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/Emails/To CPt/change-to-account-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/change-to-bill-to-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/change-to-contact-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/change-to-email-notifications-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/change-to-my-profile-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/change-to-ship-to-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/document-request-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/general-inquiry-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/new-contact-request-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/new-quote-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/new-ship-to-request-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/order-inquiry-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To CPt/quote-inquiry-get-help-email-to-chempoint.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/change-to-account-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/change-to-bill-to-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/change-to-contact-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/change-to-email-notifications-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/change-to-my-profile-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/change-to-ship-to-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/document-request-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/general-inquiry-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/new-contact-request-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/new-quote-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/new-ship-to-request-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/order-inquiry-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/Emails/To User/quote-inquiry-get-help-email-to-user.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/get-help.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>

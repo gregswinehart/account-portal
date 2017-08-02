@@ -185,7 +185,7 @@ padding: 0 0 0 36px;
 }
 
 .dropdown-menu.dropdown-button {
-    height: 200px;
+    max-height: 200px;
     overflow: auto;
 }
 
@@ -199,6 +199,12 @@ padding: 0 0 0 36px;
 	text-align: left;
 	font-size: 14px;
 	font-family: 'pluto_sans', Arial, sans-serif;
+	margin-top: 0px !important;
+}
+
+.two-columns {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .btn .caret {
@@ -686,6 +692,18 @@ a, .btn {
 	border-radius: 0px;
 	float: right;
 	margin-right: 30px;
+}
+
+.place-order-sidebar {
+    background-color: #f8f8f8;
+    padding-top: 20px;
+    border-radius: 0px;
+    float: right;
+}
+
+.order-title {
+	margin-top: 50px;
+
 }
 
 .shipment-summary {
