@@ -101,6 +101,7 @@ padding: 0 0 0 36px;
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
 	background-color: #F5F1EA;
+	border: none;
 }
 
 .top-nav > li  {
@@ -642,8 +643,20 @@ button, input, select, textarea {
 	border: 1px solid #0099D8;
 }
 
-.btn-theme-border-color:hover, .price-col.feature .p-btn:hover, .side-social-link a:hover, .massive-progress.progress-theme-color .progress-bar > span:before {
+.btn-dropdown-border-color {
+	border: 1px solid #231F20;
+}
+
+.btn-dropdown-border-color:hover, .btn-theme-border-color:hover, .price-col.feature .p-btn:hover, .side-social-link a:hover, .massive-progress.progress-theme-color .progress-bar > span:before {
 	border: 1px solid #F05C22;
+}
+
+.btn-small-dropdown {
+color: #231F20 !important;
+}
+
+.btn-small-dropdown:hover {
+color: #F05C22 !important;
 }
 
 .btn-theme-color,  .btn-dark-solid:focus, .btn-theme-border-color:hover {
@@ -1216,7 +1229,7 @@ Media Queries
 	    margin: 0;
 	}
 
-	.dropdown-menu {
+	.dropdown-menu:hover {
 		right: inherit;
 	}
 	.dropdown-menu>li>a {

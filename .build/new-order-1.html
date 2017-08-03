@@ -50,7 +50,7 @@
 
 
 	
-    <title>Place an Order</title>
+    <title>Orders</title>
 
     
     <!-- endinject -->
@@ -322,403 +322,174 @@
         <section class="body-content" style="z-index: 3">
             <div class="page-content">
                 <div class="container">
-                    
                     <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12"> 
-                            <div>
-                                <a href="index.html"><img src="static/img/checkout.png" style="width: 100%;"></a>
-                            </div>
-                            <div class="text-left order-title">
-                                <h2 class="text-uppercase">Place an Order</h2>
-                                <p>Ship To: 2820 Yonkers Rd, Raleigh, NC 27604-3230, USA<br>
-                                Final Destination Country: United States of America</p>
-                            </div> 
 
-                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns"> 
-                                <label for="form-field-name">Freight Terms</label>
-                                        
-                                <div class="dropdown">
-                                    <button class="btn btn-small btn-block btn-theme-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">General Inquiry
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-button">
-                                        <li><a href="#">ChemPoint Freight - $5</a></li>
-                                        <li><a href="#">Freight Collect</a></li>
-                                        <li><a href="#">3rd Party Logistics</a></li>
-                                        <li><a href="#">Pickup/Will Call</a></li>
-                                        <li><a href="#">Other</a></li>
-                                    </ul>
-                                </div>
-                                <script type="text/javascript">
-                                    $('section .dropdown-toggle').dropdown(); 
-                                </script> 
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns"> 
-                                <label for="form-field-name">Freight Terms</label>
-                                        
-                                <div>
-                                    <input type='text' class="form-control" id='datetimepicker4' />
-                                </div>
-                                        
-                            </div>
-                            <script type="text/javascript">
-                                $(function () {
-                                    $('#datetimepicker4').datetimepicker();
-                                });
-                            </script>
-                        </div>
-
-
-
-
-
-
-                        <div class="col-md-4 col-sm-6 col-xs-12 place-order-sidebar"> 
-                            <div class="form-group">
-                                <button class="btn btn-small btn-dark-solid full-width" value="login">CONTINUE TO SHIPPING
-                                </button>
-                            </div>
-                            <table class="top-table table table-simple table-money text-right" >
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Subtotal:</th>
-                                        <td>$334,567.O045</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Shipping:</th>
-                                        <td>$5.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Processing/Fees:</th>
-                                        <td>$100.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tax:</th>
-                                        <td>Exempt</td>
-                                    </tr>
-                                </tbody>      
-                            </table>
-                            <table class="top-table table table-simple table-money table-total text-right" >
-                               <tbody>
-                                    <tr>
-                                        <th scope="row">Order Total:</th>
-                                        <td>$334,572.0000</td>
-                                    </tr>       
-                                </tbody> 
-                            </table>
-                        </div>
-                    </div>
-
-
-
-
-<div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker2'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker2').datetimepicker({
-                    locale: 'ru'
-                });
-            });
-        </script>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker3'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker3').datetimepicker({
-                    format: 'LT'
-                });
-            });
-        </script>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-                    <div class="divider d-solid d-single "></div>
-                        
-                    <div class="row">
                         <div class="col-md-12 col-xs-12">
                             <div class="text-left text-uppercase">
-                                <h2>Shipment 1 of 2</h2>
+                                <h1>Place an Order</h1>
                             </div>
                         </div>
-
-                        <div class="col-md-4 col-xs-12">
-                            <div class="text-left">
-                                <p>Shipment Status: Shipped<br>
-                                Ship Date: Jun 23, 2017<br>
-                                Expected Delivery Date: Jun 25, 2017<br>
-                                Shipping Mode: Parcel<br>
-                                Carrier: FEDEX </p>  
+                        <div class="col-md-12 col-xs-12">
+                            <div>
+                                <p>To begin your order, select your Ship To and Final Destination Country below.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-xs-12">
-                            <div class="text-left">
-                                <p>Freight Service: Ground<br>
-                                Tracking/PRO: <br>
-                                Freight Cost: $5 <br>
-                                Bill of Lading: Download from FEDEX</p>  
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                             <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">DOWNLOAD INVOICE</button>
-                            <button type="button" class="btn btn-small btn-theme-border-color btn-block">ASK ABOUT THIS SHIPMENT</button>
-                        </div>
-
-                        <div class="col-md-12 col-sm-12 table-scroll">   
-                            <table class="table table-simple table-money">
-                                <thead>
-                                    <tr>
-                                        <th class="first-item">Product</th>
-                                        <th>Quantity</th>
-                                        <th class="lot">Price Per SKU</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                     
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 price-summary shipment-summary"> 
-                            <table class="top-table table table-simple table-money text-right" >
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Subtotal:</th>
-                                        <td>$334,567.O045</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Shipping:</th>
-                                        <td>$5.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Processing/Fees:</th>
-                                        <td>$100.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tax:</th>
-                                        <td>Exempt</td>
-                                    </tr>
-                                </tbody>      
-                            </table>
-                            <table class="top-table table table-simple table-money table-total text-right" >
-                               <tbody>
-                                    <tr>
-                                        <th scope="row">Shipment Total:</th>
-                                        <td>$334,572.0000</td>
-                                    </tr>       
-                                </tbody> 
-                            </table>
-                        </div>
-                    </div>
-
-
-
-                    <div class="divider d-solid d-single-light"></div>
-                        
-                    <div class="row">
-                        <div class="col-md-6 col-xs-12">
-                            <div class="text-left text-uppercase">
-                                <h2>Shipment 2 of 2</h2>
-                            </div>
-                        </div>
-                        
                     </div>
                     <div class="row">
 
-                        <div class="col-md-4 col-xs-12">
-                            <div class="text-left">
-                                <p>Shipment Status: Shipped<br>
-                                Ship Date: Jun 23, 2017<br>
-                                Expected Delivery Date: Jun 26, 2017<br>
-                                Shipping Mode: Parcel<br>
-                                Carrier: FEDEX </p>  
+                        <div class="col-md-6 col-sm-12 col-xs-12"> 
+                            
+                                    
+                            <div class="dropdown">
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Select Ship To
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-button">
+                                    <li><a href="#">Ship To Example #1</a></li>
+                                    <li><a href="#">Ship To Example #2</a></li>
+                                    <li><a href="#">Ship To Example #3</a></li>
+                                    <li><a href="#">Ship To Example #4</a></li>
+                                    <li><a href="#">Ship To Example #5</a></li>
+                                    <li><a href="#">Ship To Example #6</a></li>
+                                </ul>
                             </div>
+                            <script type="text/javascript">
+                                $('section .dropdown-toggle').dropdown(); 
+                            </script> 
                         </div>
-                        <div class="col-md-4 col-xs-12">
-                            <div class="text-left">
-                                <p>Freight Service: Ground<br>
-                                Tracking/PRO: <br>
-                                Freight Cost: $5 <br>
-                                Bill of Lading: Download from FEDEX</p>  
+                        <div class="col-md-6 col-sm-12 col-xs-12"> 
+                            
+                                    
+                            <div class="dropdown">
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Select Final Destination Country
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-button">
+                                    <li><a href="#">All Countries Here</a></li>
+                                    <li><a href="#">All Countries Here</a></li>
+                                    <li><a href="#">All Countries Here</a></li>
+                                    <li><a href="#">All Countries Here</a></li>
+                                    <li><a href="#">All Countries Here</a></li>
+                                    <li><a href="#">All Countries Here</a></li>
+                                    <li><a href="#">All Countries Here</a></li>
+                                    <li><a href="#">All Countries Here</a></li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                             <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">DOWNLOAD INVOICE</button>
-                            <button type="button" class="btn btn-small btn-theme-border-color btn-block">ASK ABOUT THIS SHIPMENT</button>
+                            <script type="text/javascript">
+                                $('section .dropdown-toggle').dropdown(); 
+                            </script> 
                         </div>
 
-                        
 
-                        <div class="col-md-12 col-sm-12 table-scroll">   
-                            <table class="table table-simple table-money">
+
+                        <div class="col-md-12"> 
+                            <a href="#" class="btn btn-small btn-theme-border-color btn-right">CONTINUE WITH YOUR ORDER</a>
+                        </div>
+
+
+<div class="divider d-solid d-single"></div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 table-overview">
+                            <div class="text-left">
+                                <h4>You have <strong>3</strong> unsubmitted carts:</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 table-scroll table-end">   
+                            <table class="table">
                                 <thead>
                                     <tr>
-                                        <th class="first-item">Product</th>
-                                        <th>Quantity</th>
-                                        <th class="lot">Price Per SKU</th>
-                                        <th>Total</th>
+                                        <th>Date Modified</th>
+                                        <th>PO</th>
+                                        <th>Ship To</th>
+                                        <th class="td-center">Delete Order</th>
+                                        <th class="td-center" >Continue Order</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                   
+                                        									<tr>
+                                        <td>Oct 10, 2017</td>
+                                        <td><a href="#"> VERBAL WAYNE-15</a></td>
+                                        <td>1234 Graham Becker Estates, Laurelhurst, WA, 98119 USA</td>
+                                        <td class="td-center">
+                                            <a href="http://localhost:8857/order-details.html">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                        <td class="td-center">
+                                            <a href="http://localhost:8857/order-details.html">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="padding: 1px 0 0 2px; color: #fff;" class="fa fa-chevron-right fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>  
+                                    </tr>
                                     
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
+                                        									<tr>
+                                        <td>Oct 10, 2017</td>
+                                        <td><a href="#"> VERBAL WAYNE-15</a></td>
+                                        <td>1234 Graham Becker Estates, Laurelhurst, WA, 98119 USA</td>
+                                        <td class="td-center">
+                                            <a href="http://localhost:8857/order-details.html">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                        <td class="td-center">
+                                            <a href="http://localhost:8857/order-details.html">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="padding: 1px 0 0 2px; color: #fff;" class="fa fa-chevron-right fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>  
+                                    </tr>
                                     
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
+                                        									<tr>
+                                        <td>Oct 10, 2017</td>
+                                        <td><a href="#"> VERBAL WAYNE-15</a></td>
+                                        <td>1234 Graham Becker Estates, Laurelhurst, WA, 98119 USA</td>
+                                        <td class="td-center">
+                                            <a href="http://localhost:8857/order-details.html">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                        <td class="td-center">
+                                            <a href="http://localhost:8857/order-details.html">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="padding: 1px 0 0 2px; color: #fff;" class="fa fa-chevron-right fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>  
+                                    </tr>
                                      
                                 </tbody>
                             </table>
-                        </div>
-                        <div class="col-md-4 col-md-offset-8 col-xs-12 shipment-summary">     
-                            <table class="table table-simple table-money text-right" >
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Subtotal:</th>
-                                        <td>$334,567.O045</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Shipping:</th>
-                                        <td>$5.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Processing/Fees:</th>
-                                        <td>$100.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tax:</th>
-                                        <td>Exempt</td>
-                                    </tr>
-                                </tbody>      
-                            </table>
-                            <table class="top-table table table-simple table-money table-total text-right" >
-                               <tbody>
-                                    <tr>
-                                        <th scope="row">Shipment Total:</th>
-                                        <td>$334,572.0000</td>
-                                    </tr>       
-                                </tbody> 
-                            </table>
+
+                        
+
                         </div>
                     </div>
+                 
 
 
-
-
-
+                    </div>
                 </div>
             </div>
         </section>
         <!--body content end-->
-        
+
 
 
         <!--footer start 1-->
@@ -787,7 +558,6 @@
 
     <script src="assets/js/moment.min.js"></script>
     <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="assets/js/bootstrap-datetimepicker.js"></script>
 
    
 

@@ -50,7 +50,7 @@
 
 
 	
-    <title>Quote Details</title>
+    <title>Place an Order</title>
 
     
     <!-- endinject -->
@@ -322,85 +322,237 @@
         <section class="body-content" style="z-index: 3">
             <div class="page-content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 col-xs-12">
-                            <div class="text-left text-uppercase">
-                                <h1>Quote Details</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-12">
-                            <button type="button" class="btn btn-small btn-theme-border-color top-cta">REQUEST AN UPDATED QUOTE</button>
-                            <button type="button" class="btn btn-small btn-theme-border-color top-cta">ASK A QUESTION</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12"> 
-                            
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">Quote #</span>
-                                <h2 class="text-uppercase text-regular">8239872</h2>
-                            </div>
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">Expiration Date</span>
-                                <h3 class="text-uppercase text-regular">EXPIRED Dec 25, 2016</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12"> 
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">My Product Name</span>
-                                <h3 class="text-uppercase text-regular">2 oz. Tube</h3>
-                            </div>   
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">My Product Code</span>
-                                <h3>546AS5D4F</h3>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-
                     
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12"> 
+                            <div>
+                                <a href="index.html"><img src="static/img/checkout.png" style="width: 100%;"></a>
+                            </div>
+                            <div class="text-left order-title">
+                                <h2 class="text-uppercase">Place an Order</h2>
+                                <p>Ship To: 2820 Yonkers Rd, Raleigh, NC 27604-3230, USA<br>
+                                Final Destination Country: United States of America</p>
+                            </div> 
+
+
+
+                            <div class="form-group list-filter">
+                                <!-- Name -->
+                                <input type="text" name="PO" class=" form-control" placeholder="Your PO for this order *" maxlength="100" required="" data-error="Please enter a PO">
+                                <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns"> 
+                                <label for="form-field-name">Freight Terms</label>
+                                        
+                                <div class="dropdown">
+                                    <button class="btn btn-small btn-block btn-theme-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">General Inquiry
+                                      <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-button">
+                                        <li><a href="#">ChemPoint Freight - $5</a></li>
+                                        <li><a href="#">Freight Collect</a></li>
+                                        <li><a href="#">3rd Party Logistics</a></li>
+                                        <li><a href="#">Pickup/Will Call</a></li>
+                                        <li><a href="#">Other</a></li>
+                                    </ul>
+                                </div>
+                                <script type="text/javascript">
+                                    $('section .dropdown-toggle').dropdown(); 
+                                </script> 
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns"> 
+                                <label for="form-field-name">Freight Terms</label>
+                                        
+                                <div class="dropdown">
+                                    <button class="btn btn-small btn-block btn-theme-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">General Inquiry
+                                      <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-button">
+                                        <li><a href="#">ChemPoint Freight - $5</a></li>
+                                        <li><a href="#">Freight Collect</a></li>
+                                        <li><a href="#">3rd Party Logistics</a></li>
+                                        <li><a href="#">Pickup/Will Call</a></li>
+                                        <li><a href="#">Other</a></li>
+                                    </ul>
+                                </div>
+                                <script type="text/javascript">
+                                    $('section .dropdown-toggle').dropdown(); 
+                                </script> 
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                        <div class="col-md-4 col-sm-6 col-xs-12 place-order-sidebar"> 
+                            <div class="form-group">
+                                <button class="btn btn-small btn-dark-solid full-width" value="login">CONTINUE TO SHIPPING
+                                </button>
+                            </div>
+                            <table class="top-table table table-simple table-money text-right" >
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Subtotal:</th>
+                                        <td>$334,567.O045</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Shipping:</th>
+                                        <td>$5.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Processing/Fees:</th>
+                                        <td>$100.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tax:</th>
+                                        <td>Exempt</td>
+                                    </tr>
+                                </tbody>      
+                            </table>
+                            <table class="top-table table table-simple table-money table-total text-right" >
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Order Total:</th>
+                                        <td>$334,572.0000</td>
+                                    </tr>       
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
                     
                     <div class="divider d-solid d-single "></div>
                         
                     <div class="row">
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-md-12 col-xs-12">
                             <div class="text-left text-uppercase">
-                                <h2>Product Pricing</h2>
+                                <h2>Shipment 1 of 2</h2>
                             </div>
                         </div>
-                        
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 table-scroll table-end">   
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left">
+                                <p>Shipment Status: Shipped<br>
+                                Ship Date: Jun 23, 2017<br>
+                                Expected Delivery Date: Jun 25, 2017<br>
+                                Shipping Mode: Parcel<br>
+                                Carrier: FEDEX </p>  
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left">
+                                <p>Freight Service: Ground<br>
+                                Tracking/PRO: <br>
+                                Freight Cost: $5 <br>
+                                Bill of Lading: Download from FEDEX</p>  
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                             <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">DOWNLOAD INVOICE</button>
+                            <button type="button" class="btn btn-small btn-theme-border-color btn-block">ASK ABOUT THIS SHIPMENT</button>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 table-scroll">   
                             <table class="table table-simple table-money">
                                 <thead>
-                                    <tr class="lot">
-                                        <th id="first-item">MOQ</th>
-                                        <th id="first-item">SKU</th>
-                                        <th id="first-item">SKU Description</th>
-                                        <th id="first-item">Currency</th>
-                                        <th>Product Price/UOM</th>
-                                        <th>Product Price/SKU</th>
-                                        <th>Extended MOQ Price </th>
+                                    <tr>
+                                        <th class="first-item">Product</th>
+                                        <th>Quantity</th>
+                                        <th class="lot">Price Per SKU</th>
+                                        <th>Total</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     
                                         <tr>
-    <td class="first-item">40</td>
-    <td class="first-item">0111111</td>
-    <td class="first-item">Krytox GPL205 Grease - 2 oz Tube</td>
-    <td class="first-item">USD</td>
-    <td>$600.3333/lb</td>
-    <td>$32.8884</td>
-    <td>$1,315.5363</td>  
+    <td class="first-item">
+        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
+        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
+        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
+        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
+        </div>  
+    </td>
+    <td>20</td>
+    <td>$16.8431</td>
+    <td>$336.8634</td>  
+</tr> 
+                                    
+                                        <tr>
+    <td class="first-item">
+        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
+        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
+        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
+        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
+        </div>  
+    </td>
+    <td>20</td>
+    <td>$16.8431</td>
+    <td>$336.8634</td>  
+</tr> 
+                                    
+                                        <tr>
+    <td class="first-item">
+        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
+        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
+        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
+        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
+        </div>  
+    </td>
+    <td>20</td>
+    <td>$16.8431</td>
+    <td>$336.8634</td>  
 </tr> 
                                      
                                 </tbody>
                             </table>
-                            <a href="#" class="btn btn-small btn-theme-border-color">VIEW PRODUCT DOCUMENTS</a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 price-summary shipment-summary"> 
+                            <table class="top-table table table-simple table-money text-right" >
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Subtotal:</th>
+                                        <td>$334,567.O045</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Shipping:</th>
+                                        <td>$5.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Processing/Fees:</th>
+                                        <td>$100.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tax:</th>
+                                        <td>Exempt</td>
+                                    </tr>
+                                </tbody>      
+                            </table>
+                            <table class="top-table table table-simple table-money table-total text-right" >
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Shipment Total:</th>
+                                        <td>$334,572.0000</td>
+                                    </tr>       
+                                </tbody> 
+                            </table>
                         </div>
                     </div>
 
@@ -409,66 +561,123 @@
                     <div class="divider d-solid d-single-light"></div>
                         
                     <div class="row">
-                        <div class="col-md-12 col-xs-12">
+                        <div class="col-md-6 col-xs-12">
                             <div class="text-left text-uppercase">
-                                <h2>Shipping and Handling</h2>
+                                <h2>Shipment 2 of 2</h2>
                             </div>
                         </div>
                         
                     </div>
                     <div class="row">
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                           
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">Freight Terms</span>
-                                    <p>ChemPoint Freight</p>  
-                            </div>
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">INCO Terms</span>
-                                    <p>DDP</p>  
-                            </div>
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">F.O.B. Point</span>
-                                    <p>Rinchem Warehouse, Bensalem, PA  19020-5916</p>  
-                            </div>
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">Handling Details</span>
-                                    <p>HAZMAT: Yes<br>
-                                    Temperature Control: No<br>
-                                    Protect from Freezing: Yes<br>
-                                    U.N. Number: XXX.XX.XXXX</p>  
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left">
+                                <p>Shipment Status: Shipped<br>
+                                Ship Date: Jun 23, 2017<br>
+                                Expected Delivery Date: Jun 26, 2017<br>
+                                Shipping Mode: Parcel<br>
+                                Carrier: FEDEX </p>  
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-
-
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">Main Address</span>
-                                <p>Vallen - Raleigh, NC, 2820 Yonkers Rd Raleigh, NC 27604-3230, USA  
-                                </p>  
-                            </div>
-                            <div class="heading-title-alt text-left">                        
-                                <span class="heading-sub-title text-uppercase theme-color">Billing Address</span>
-                                    <p>Vallen - Raleigh, NC, 1234 Brian Ward Avenue, Suite 14, Wardtown, WA 98020 </p>  
-                            </div>
-                            <div class="heading-title-alt text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">Ship To Address</span>
-                                    <p>Vallen - Raleigh, NC191046 - Eastman Chemical - Bldg 177 - 100 North Eastman Road BLDG 177 Kingsport, TN 37662 US 
-                                    </p>  
-                            </div>
-                            <div class="heading-title-alt text-left">
-                                <div class="text-left">
-                                <span class="heading-sub-title text-uppercase theme-color">Final Destination Address</span>
-                                    <p>Vallen - Raleigh, NC, 1234 Fake Address Rd, Allentown, PA 02647</p>  
+                        <div class="col-md-4 col-xs-12">
+                            <div class="text-left">
+                                <p>Freight Service: Ground<br>
+                                Tracking/PRO: <br>
+                                Freight Cost: $5 <br>
+                                Bill of Lading: Download from FEDEX</p>  
                             </div>
                         </div>
-                        
-                        
+                        <div class="col-md-4 col-xs-12">
+                             <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">DOWNLOAD INVOICE</button>
+                            <button type="button" class="btn btn-small btn-theme-border-color btn-block">ASK ABOUT THIS SHIPMENT</button>
+                        </div>
 
                         
 
-                        
+                        <div class="col-md-12 col-sm-12 table-scroll">   
+                            <table class="table table-simple table-money">
+                                <thead>
+                                    <tr>
+                                        <th class="first-item">Product</th>
+                                        <th>Quantity</th>
+                                        <th class="lot">Price Per SKU</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                        <tr>
+    <td class="first-item">
+        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
+        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
+        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
+        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
+        </div>  
+    </td>
+    <td>20</td>
+    <td>$16.8431</td>
+    <td>$336.8634</td>  
+</tr> 
+                                    
+                                        <tr>
+    <td class="first-item">
+        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
+        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
+        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
+        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
+        </div>  
+    </td>
+    <td>20</td>
+    <td>$16.8431</td>
+    <td>$336.8634</td>  
+</tr> 
+                                    
+                                        <tr>
+    <td class="first-item">
+        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
+        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
+        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
+        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
+        </div>  
+    </td>
+    <td>20</td>
+    <td>$16.8431</td>
+    <td>$336.8634</td>  
+</tr> 
+                                     
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4 col-md-offset-8 col-xs-12 shipment-summary">     
+                            <table class="table table-simple table-money text-right" >
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Subtotal:</th>
+                                        <td>$334,567.O045</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Shipping:</th>
+                                        <td>$5.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Processing/Fees:</th>
+                                        <td>$100.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tax:</th>
+                                        <td>Exempt</td>
+                                    </tr>
+                                </tbody>      
+                            </table>
+                            <table class="top-table table table-simple table-money table-total text-right" >
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Shipment Total:</th>
+                                        <td>$334,572.0000</td>
+                                    </tr>       
+                                </tbody> 
+                            </table>
+                        </div>
                     </div>
 
 

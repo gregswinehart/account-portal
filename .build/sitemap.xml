@@ -176,6 +176,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/Emails/To User/general-inquiry-get-help-email-to-user copy.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/Emails/To User/general-inquiry-get-help-email-to-user.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -282,6 +287,11 @@
     </url>
     <url>
         <loc>/login-returning.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/new-order-1.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
