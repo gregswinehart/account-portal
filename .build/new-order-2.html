@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/default-theme.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/cpt-custom.css">
 
     <script src="static/vendor/jquery/jquery-1.10.2.min.js"></script>
@@ -123,7 +124,7 @@
                         <ol style="padding-left: 45px;" class="breadcrumb secondary-nav">
                             <li><a href="/index.html">Home</a></li>
                             <li><a href="/orders.html">Orders</a></li>
-                            <li><a href="/new-order.html">New Order</a></li>
+                            <li><a href="/new-order-1.html">New Order</a></li>
                             <li><a href="/quotes.html">Quotes</a></li>
                             <li><a href="/documents.html">Documents</a></li>
                             <li><a href="/account.html">Account Details</a></li>
@@ -198,7 +199,7 @@
                             <dd style="display: block;">
                                 <a href="/index.html">Home</a><br />
                                 <a href="/orders.html">Orders</a><br />
-                                <a href="/new-order.html">New Order</a><br />
+                                <a href="/new-order-1.html">New Order</a><br />
                                 <a href="/quotes.html">Quotes</a><br />
                                 <a href="/documents.html">Documents</a><br />
                                 <a href="/account.html">Account Details</a><br />
@@ -324,364 +325,249 @@
                 <div class="container">
                     
                     <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12"> 
-                            <div>
-                                <a href="index.html"><img src="static/img/checkout.png" style="width: 100%;"></a>
-                            </div>
-                            <div class="text-left order-title">
-                                <h2 class="text-uppercase">Place an Order</h2>
-                                <p>Ship To: 2820 Yonkers Rd, Raleigh, NC 27604-3230, USA<br>
-                                Final Destination Country: United States of America</p>
+
+
+
+
+                    <div class="container">
+    
+                        <div class="col-md-8 col-sm-12 col-xs-12"> 
+                           
+                            <div class="text-left">
+                                <h1>PLACE AN ORDER</h1>
+                                <p class="order-info">Ship To: 2820 Yonkers Rd, Raleigh, NC 27604-3230, USA<br>
+                                Final Destination Country: United States of America<br><br>
+                                Your PO for this order:  *<input type="text" name="PO" style="display:inline;" class="input-sm" placeholder="" maxlength="100" required="" data-error="How many would you like?">
+                                    <div class="help-block with-errors"></div></p>
+
                             </div> 
-
-
-
-                            <div class="form-group list-filter">
-                                <!-- Name -->
-                                <input type="text" name="PO" class=" form-control" placeholder="Your PO for this order *" maxlength="100" required="" data-error="Please enter a PO">
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns"> 
-                                <label for="form-field-name">Freight Terms</label>
-                                        
-                                <div class="dropdown">
-                                    <button class="btn btn-small btn-block btn-theme-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">General Inquiry
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-button">
-                                        <li><a href="#">ChemPoint Freight - $5</a></li>
-                                        <li><a href="#">Freight Collect</a></li>
-                                        <li><a href="#">3rd Party Logistics</a></li>
-                                        <li><a href="#">Pickup/Will Call</a></li>
-                                        <li><a href="#">Other</a></li>
-                                    </ul>
-                                </div>
-                                <script type="text/javascript">
-                                    $('section .dropdown-toggle').dropdown(); 
-                                </script> 
-                            </div>
-
-                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns"> 
-                                <label for="form-field-name">Freight Terms</label>
-                                        
-                                <div class="dropdown">
-                                    <button class="btn btn-small btn-block btn-theme-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">General Inquiry
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-button">
-                                        <li><a href="#">ChemPoint Freight - $5</a></li>
-                                        <li><a href="#">Freight Collect</a></li>
-                                        <li><a href="#">3rd Party Logistics</a></li>
-                                        <li><a href="#">Pickup/Will Call</a></li>
-                                        <li><a href="#">Other</a></li>
-                                    </ul>
-                                </div>
-                                <script type="text/javascript">
-                                    $('section .dropdown-toggle').dropdown(); 
-                                </script> 
-                            </div>
                         </div>
 
-
-
-
-
-
-
-
-
-                        <div class="col-md-4 col-sm-6 col-xs-12 place-order-sidebar"> 
-                            <div class="form-group">
-                                <button class="btn btn-small btn-dark-solid full-width" value="login">CONTINUE TO SHIPPING
-                                </button>
-                            </div>
-                            <table class="top-table table table-simple table-money text-right" >
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Subtotal:</th>
-                                        <td>$334,567.O045</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Shipping:</th>
-                                        <td>$5.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Processing/Fees:</th>
-                                        <td>$100.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tax:</th>
-                                        <td>Exempt</td>
-                                    </tr>
-                                </tbody>      
-                            </table>
-                            <table class="top-table table table-simple table-money table-total text-right" >
-                               <tbody>
-                                    <tr>
-                                        <th scope="row">Order Total:</th>
-                                        <td>$334,572.0000</td>
-                                    </tr>       
-                                </tbody> 
-                            </table>
+                        <div class="col-md-4 col-sm-12 col-xs-12 place-order-sidebar-light">   
+                             <a href="new-order-3-Cpt.html" style="margin-top:0px;" class="btn btn-small btn-dark-solid full-width top-cta">CONTINUE TO SHIPPING</a>
+                       
+                            <button class="btn btn-link full-width" value="save">SAVE ORDER
+                            </button>  
                         </div>
                     </div>
 
+                                    
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 table-overview">
+                            <div class="text-left text-uppercase">
+                                <h4>Add Products to My Cart</h4>
+                            </div>
+                        </div>
+                   </div>
+
+                                    
+
+                    <div class="row cart-row">
+
+
+                        <div class="col-md-6 col-sm-5 col-xs-12 cart-row">        
+                            <div class="dropdown">
+                                <button style="margin-bottom:0px;" class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="dropdown" data-toggle="dropdown">Quoted Products
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-button">
+                                    <li><a href="#">Product Example #1</a></li>
+                                    <li><a href="#">Product Example #2</a></li>
+                                    <li><a href="#">Product Example #3</a></li>
+                                    <li><a href="#">Product Example #4</a></li>
+                                    <li><a href="#">Product Example #5</a></li>
+                                    <li><a href="#">Product Example #6</a></li>
+                                </ul>
+                            </div>
+                            <p class="under-button-link" "><a href="#"> Request a new product quote</a></p>
+                            <script type="text/javascript">
+                                $('section .dropdown-toggle').dropdown(); 
+                            </script> 
+                        </div>
 
 
 
+                        <div class="col-md-3 col-sm-4 col-xs-12 cart-row"> 
+                            <div class="form-group ">
+                                <!-- Quantity -->
+                                <input type="text" name="PO" class=" form-control" placeholder="Quantity (MOQ: 12)" maxlength="100" required="" data-error="How many would you like?">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                                    
+                            
+                        </div>
 
 
 
+                        <div class="col-md-3 col-sm-3 col-xs-12 cart-row"> 
+                            <div class="form-group">
+                                <button style="margin-top:0px;" class="btn btn-small btn-theme-border-color btn-right full-width">ADD TO CART
+                                </button>
+                            </div>
+                        </div>
 
 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 table-scroll table-end table-overview">   
+                            <table class="display table table-simple table-money table-scroll">
+                                <thead>
+                                    <tr>
+                                        <th class="first-item">Product</th>
+                                        <th class="first-item">MOQ</th>
+                                        <th class="first-item"> Quantity</th>
+                                        <th class="td-center">Update Quantity</th>
+                                        <th>Price</th>
+                                        <th>Unit Price</th>
+                                        <th>Total</th>
+                                        <th class="td-center">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                        								   <tr class="cart-line-text">
+                                        <td class="first-item">Krytox GPL224 Grease - 8 kg Cartridge</td>
+                                        <td class="first-item">12</td>
+                                        <td class="first-item">
+                                            <div class="form-group">
+                                                <!-- Quantity -->
+                                                <input type="text" name="PO" class="cart-line-qty form-control" placeholder="" maxlength="100" required="" data-error="How many would you like?">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </td>
+                                        <td class="td-center">
+                                            <a href="#">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-refresh fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                         <td>$1.5818/kg</td>
+                                         <td>$12.6543</td>
+                                         <td></td>
+                                        <td class="td-center">
+                                            <a href="#">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>  
+                                    </tr>
+
+
+                                    <tr class="cart-line-text">
+                                        <td class="first-item">Krytox GPL224 Grease - 80 kg tub</td>
+                                        <td class="first-item">12</td>
+                                        <td class="first-item">
+                                            <div class="form-group">
+                                                <!-- Quantity -->
+                                                <input type="text" name="PO" class="cart-line-qty form-control" placeholder="" maxlength="100" required="" data-error="How many would you like?">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </td>
+                                        <td class="td-center">
+                                            <a href="#">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x disabled"></i>
+                                                    <i style="color: #fff;" class="fa fa-refresh fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                         <td>$1.5818/kg</td>
+                                         <td>$12.6543</td>
+                                         <td>$151.8516</td>
+                                        <td class="td-center">
+                                            <a href="#">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>  
+                                    </tr>
+                                    
+                                        								   <tr class="cart-line-text">
+                                        <td class="first-item">Krytox GPL224 Grease - 8 kg Cartridge</td>
+                                        <td class="first-item">12</td>
+                                        <td class="first-item">
+                                            <div class="form-group">
+                                                <!-- Quantity -->
+                                                <input type="text" name="PO" class="cart-line-qty form-control" placeholder="" maxlength="100" required="" data-error="How many would you like?">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </td>
+                                        <td class="td-center">
+                                            <a href="#">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-refresh fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                         <td>$1.5818/kg</td>
+                                         <td>$12.6543</td>
+                                         <td></td>
+                                        <td class="td-center">
+                                            <a href="#">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>  
+                                    </tr>
+
+
+                                    <tr class="cart-line-text">
+                                        <td class="first-item">Krytox GPL224 Grease - 80 kg tub</td>
+                                        <td class="first-item">12</td>
+                                        <td class="first-item">
+                                            <div class="form-group">
+                                                <!-- Quantity -->
+                                                <input type="text" name="PO" class="cart-line-qty form-control" placeholder="" maxlength="100" required="" data-error="How many would you like?">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </td>
+                                        <td class="td-center">
+                                            <a href="#">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x disabled"></i>
+                                                    <i style="color: #fff;" class="fa fa-refresh fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                         <td>$1.5818/kg</td>
+                                         <td>$12.6543</td>
+                                         <td>$151.8516</td>
+                                        <td class="td-center">
+                                            <a href="#">
+                                                <span class="fa-stack fa-md">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
+                                                </span>
+                                            </a>
+                                        </td>  
+                                    </tr>
+                                     
+                                </tbody>
+                            </table>
+
+                        
+
+                        </div>
+
+                        
+                    </div>
+                </div>
 
 
 
                     
-                    <div class="divider d-solid d-single "></div>
-                        
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                            <div class="text-left text-uppercase">
-                                <h2>Shipment 1 of 2</h2>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-xs-12">
-                            <div class="text-left">
-                                <p>Shipment Status: Shipped<br>
-                                Ship Date: Jun 23, 2017<br>
-                                Expected Delivery Date: Jun 25, 2017<br>
-                                Shipping Mode: Parcel<br>
-                                Carrier: FEDEX </p>  
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                            <div class="text-left">
-                                <p>Freight Service: Ground<br>
-                                Tracking/PRO: <br>
-                                Freight Cost: $5 <br>
-                                Bill of Lading: Download from FEDEX</p>  
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                             <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">DOWNLOAD INVOICE</button>
-                            <button type="button" class="btn btn-small btn-theme-border-color btn-block">ASK ABOUT THIS SHIPMENT</button>
-                        </div>
-
-                        <div class="col-md-12 col-sm-12 table-scroll">   
-                            <table class="table table-simple table-money">
-                                <thead>
-                                    <tr>
-                                        <th class="first-item">Product</th>
-                                        <th>Quantity</th>
-                                        <th class="lot">Price Per SKU</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                     
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 price-summary shipment-summary"> 
-                            <table class="top-table table table-simple table-money text-right" >
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Subtotal:</th>
-                                        <td>$334,567.O045</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Shipping:</th>
-                                        <td>$5.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Processing/Fees:</th>
-                                        <td>$100.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tax:</th>
-                                        <td>Exempt</td>
-                                    </tr>
-                                </tbody>      
-                            </table>
-                            <table class="top-table table table-simple table-money table-total text-right" >
-                               <tbody>
-                                    <tr>
-                                        <th scope="row">Shipment Total:</th>
-                                        <td>$334,572.0000</td>
-                                    </tr>       
-                                </tbody> 
-                            </table>
-                        </div>
-                    </div>
-
-
-
-                    <div class="divider d-solid d-single-light"></div>
-                        
-                    <div class="row">
-                        <div class="col-md-6 col-xs-12">
-                            <div class="text-left text-uppercase">
-                                <h2>Shipment 2 of 2</h2>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="row">
-
-                        <div class="col-md-4 col-xs-12">
-                            <div class="text-left">
-                                <p>Shipment Status: Shipped<br>
-                                Ship Date: Jun 23, 2017<br>
-                                Expected Delivery Date: Jun 26, 2017<br>
-                                Shipping Mode: Parcel<br>
-                                Carrier: FEDEX </p>  
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                            <div class="text-left">
-                                <p>Freight Service: Ground<br>
-                                Tracking/PRO: <br>
-                                Freight Cost: $5 <br>
-                                Bill of Lading: Download from FEDEX</p>  
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                             <button type="button" class="btn btn-small btn-theme-border-color btn-block top-cta">DOWNLOAD INVOICE</button>
-                            <button type="button" class="btn btn-small btn-theme-border-color btn-block">ASK ABOUT THIS SHIPMENT</button>
-                        </div>
-
-                        
-
-                        <div class="col-md-12 col-sm-12 table-scroll">   
-                            <table class="table table-simple table-money">
-                                <thead>
-                                    <tr>
-                                        <th class="first-item">Product</th>
-                                        <th>Quantity</th>
-                                        <th class="lot">Price Per SKU</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">
-        <div class="product-titles">Sku #:  345432 - Krytox GPL224 Grease - 8 kg Cartridge</div>
-        <div class="product-details">Product Code: Forest City - 2746-N / Product Name: <br>
-        Download: <a href="#">SDS</a> / <a href="#">TDS</a><br>
-        Lot & COA: <a href="#">9873459873</a> / <a href="#">1234098745</a> / <a href="#">8762349873</a>  
-        </div>  
-    </td>
-    <td>20</td>
-    <td>$16.8431</td>
-    <td>$336.8634</td>  
-</tr> 
-                                     
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-4 col-md-offset-8 col-xs-12 shipment-summary">     
-                            <table class="table table-simple table-money text-right" >
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Subtotal:</th>
-                                        <td>$334,567.O045</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Shipping:</th>
-                                        <td>$5.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Processing/Fees:</th>
-                                        <td>$100.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tax:</th>
-                                        <td>Exempt</td>
-                                    </tr>
-                                </tbody>      
-                            </table>
-                            <table class="top-table table table-simple table-money table-total text-right" >
-                               <tbody>
-                                    <tr>
-                                        <th scope="row">Shipment Total:</th>
-                                        <td>$334,572.0000</td>
-                                    </tr>       
-                                </tbody> 
-                            </table>
-                        </div>
-                    </div>
-
-
-
+                    
 
 
                 </div>

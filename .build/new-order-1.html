@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/default-theme.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/cpt-custom.css">
 
     <script src="static/vendor/jquery/jquery-1.10.2.min.js"></script>
@@ -50,7 +51,7 @@
 
 
 	
-    <title>Orders</title>
+    <title>Place an Order</title>
 
     
     <!-- endinject -->
@@ -123,7 +124,7 @@
                         <ol style="padding-left: 45px;" class="breadcrumb secondary-nav">
                             <li><a href="/index.html">Home</a></li>
                             <li><a href="/orders.html">Orders</a></li>
-                            <li><a href="/new-order.html">New Order</a></li>
+                            <li><a href="/new-order-1.html">New Order</a></li>
                             <li><a href="/quotes.html">Quotes</a></li>
                             <li><a href="/documents.html">Documents</a></li>
                             <li><a href="/account.html">Account Details</a></li>
@@ -198,7 +199,7 @@
                             <dd style="display: block;">
                                 <a href="/index.html">Home</a><br />
                                 <a href="/orders.html">Orders</a><br />
-                                <a href="/new-order.html">New Order</a><br />
+                                <a href="/new-order-1.html">New Order</a><br />
                                 <a href="/quotes.html">Quotes</a><br />
                                 <a href="/documents.html">Documents</a><br />
                                 <a href="/account.html">Account Details</a><br />
@@ -331,17 +332,17 @@
                         </div>
                         <div class="col-md-12 col-xs-12">
                             <div>
-                                <p>To begin your order, select your Ship To and Final Destination Country below.</p>
+                                <p>To begin your order, we need to know a couple things...</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row cart-row">
 
-                        <div class="col-md-6 col-sm-12 col-xs-12"> 
+                        <div class="col-md-5 col-sm-12 col-xs-12 cart-row"> 
                             
                                     
                             <div class="dropdown">
-                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Select Ship To
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Ship To
                                   <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu dropdown-button">
@@ -357,11 +358,11 @@
                                 $('section .dropdown-toggle').dropdown(); 
                             </script> 
                         </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12"> 
+                        <div class="col-md-5 col-sm-12 col-xs-12 cart-row"> 
                             
                                     
                             <div class="dropdown">
-                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Select Final Destination Country
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Final Destination Country
                                   <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu dropdown-button">
@@ -380,23 +381,26 @@
                             </script> 
                         </div>
 
+                        <div class="col-md-2 col-sm-12 col-xs-12 cart-row"> 
+                            
+                                    
+                            <div class="form-group">
+                                <a href="new-order-2.html" style="margin-top:0px;" class="btn btn-small btn-dark-solid full-width">Next</a>
 
-
-                        <div class="col-md-12"> 
-                            <a href="#" class="btn btn-small btn-theme-border-color btn-right">CONTINUE WITH YOUR ORDER</a>
+                               
+                            </div>
+                           
                         </div>
-
-
-<div class="divider d-solid d-single"></div>
-
+                    </div>
                     <div class="row">
-                        <div class="col-md-12 col-xs-12 table-overview">
-                            <div class="text-left">
-                                <h4>You have <strong>3</strong> unsubmitted carts:</h4>
+                         
+                        <div class="col-md-12 col-xs-12 ">
+                            <div class="text-left text-uppercase">
+                                <h5>You have <strong>3</strong> unsubmitted carts:</h5>
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 table-scroll table-end">   
-                            <table class="table">
+                            <table class="display table table-simple table-scroll">
                                 <thead>
                                     <tr>
                                         <th>Date Modified</th>
@@ -413,15 +417,33 @@
                                         <td><a href="#"> VERBAL WAYNE-15</a></td>
                                         <td>1234 Graham Becker Estates, Laurelhurst, WA, 98119 USA</td>
                                         <td class="td-center">
-                                            <a href="http://localhost:8857/order-details.html">
+                                            <a data-toggle="modal" data-target="#myModal" href="#">
                                                 <span class="fa-stack fa-md">
                                                     <i class="fa fa-circle fa-stack-2x"></i>
                                                     <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
                                                 </span>
                                             </a>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                              <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    ...
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
                                         </td>
                                         <td class="td-center">
-                                            <a href="http://localhost:8857/order-details.html">
+                                            <a href="#">
                                                 <span class="fa-stack fa-md">
                                                     <i class="fa fa-circle fa-stack-2x"></i>
                                                     <i style="padding: 1px 0 0 2px; color: #fff;" class="fa fa-chevron-right fa-stack-1x"></i>
@@ -429,21 +451,47 @@
                                             </a>
                                         </td>  
                                     </tr>
+
+
+
+
+
+
+                                    <!-- Button trigger modal -->
+
                                     
                                         									<tr>
                                         <td>Oct 10, 2017</td>
                                         <td><a href="#"> VERBAL WAYNE-15</a></td>
                                         <td>1234 Graham Becker Estates, Laurelhurst, WA, 98119 USA</td>
                                         <td class="td-center">
-                                            <a href="http://localhost:8857/order-details.html">
+                                            <a data-toggle="modal" data-target="#myModal" href="#">
                                                 <span class="fa-stack fa-md">
                                                     <i class="fa fa-circle fa-stack-2x"></i>
                                                     <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
                                                 </span>
                                             </a>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                              <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    ...
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
                                         </td>
                                         <td class="td-center">
-                                            <a href="http://localhost:8857/order-details.html">
+                                            <a href="#">
                                                 <span class="fa-stack fa-md">
                                                     <i class="fa fa-circle fa-stack-2x"></i>
                                                     <i style="padding: 1px 0 0 2px; color: #fff;" class="fa fa-chevron-right fa-stack-1x"></i>
@@ -451,21 +499,47 @@
                                             </a>
                                         </td>  
                                     </tr>
+
+
+
+
+
+
+                                    <!-- Button trigger modal -->
+
                                     
                                         									<tr>
                                         <td>Oct 10, 2017</td>
                                         <td><a href="#"> VERBAL WAYNE-15</a></td>
                                         <td>1234 Graham Becker Estates, Laurelhurst, WA, 98119 USA</td>
                                         <td class="td-center">
-                                            <a href="http://localhost:8857/order-details.html">
+                                            <a data-toggle="modal" data-target="#myModal" href="#">
                                                 <span class="fa-stack fa-md">
                                                     <i class="fa fa-circle fa-stack-2x"></i>
                                                     <i style="color: #fff;" class="fa fa-times fa-stack-1x"></i>
                                                 </span>
                                             </a>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                              <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    ...
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
                                         </td>
                                         <td class="td-center">
-                                            <a href="http://localhost:8857/order-details.html">
+                                            <a href="#">
                                                 <span class="fa-stack fa-md">
                                                     <i class="fa fa-circle fa-stack-2x"></i>
                                                     <i style="padding: 1px 0 0 2px; color: #fff;" class="fa fa-chevron-right fa-stack-1x"></i>
@@ -473,6 +547,14 @@
                                             </a>
                                         </td>  
                                     </tr>
+
+
+
+
+
+
+                                    <!-- Button trigger modal -->
+
                                      
                                 </tbody>
                             </table>

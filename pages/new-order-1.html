@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block header %}
-    <title>Orders</title>
+    <title>Place an Order</title>
 {% endblock header%}
 
 {% block content %}
@@ -19,17 +19,17 @@
                         </div>
                         <div class="col-md-12 col-xs-12">
                             <div>
-                                <p>To begin your order, select your Ship To and Final Destination Country below.</p>
+                                <p>To begin your order, we need to know a couple things...</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row cart-row">
 
-                        <div class="col-md-6 col-sm-12 col-xs-12"> 
+                        <div class="col-md-5 col-sm-12 col-xs-12 cart-row"> 
                             
                                     
                             <div class="dropdown">
-                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Select Ship To
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Ship To
                                   <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu dropdown-button">
@@ -45,11 +45,11 @@
                                 $('section .dropdown-toggle').dropdown(); 
                             </script> 
                         </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12"> 
+                        <div class="col-md-5 col-sm-12 col-xs-12 cart-row"> 
                             
                                     
                             <div class="dropdown">
-                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Select Final Destination Country
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Final Destination Country
                                   <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu dropdown-button">
@@ -68,23 +68,25 @@
                             </script> 
                         </div>
 
+                        <div class="col-md-2 col-sm-12 col-xs-12 cart-row"> 
+                            
+                                    
+                            <div class="form-group">
+                                <a href="new-order-2.html" style="margin-top:0px;" class="btn btn-small btn-dark-solid full-width">Next</a>
 
-
-                        <div class="col-md-12"> 
-                            <a href="#" class="btn btn-small btn-theme-border-color btn-right">CONTINUE WITH YOUR ORDER</a>
+                            </div>
+                           
                         </div>
-
-
-<div class="divider d-solid d-single"></div>
-
+                    </div>
                     <div class="row">
-                        <div class="col-md-12 col-xs-12 table-overview">
-                            <div class="text-left">
-                                <h4>You have <strong>3</strong> unsubmitted carts:</h4>
+                         
+                        <div class="col-md-12 col-xs-12 ">
+                            <div class="text-left text-uppercase">
+                                <h5>You have <strong>3</strong> unsubmitted carts:</h5>
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 table-scroll table-end">   
-                            <table class="table">
+                            <table class="display table table-simple table-scroll">
                                 <thead>
                                     <tr>
                                         <th>Date Modified</th>

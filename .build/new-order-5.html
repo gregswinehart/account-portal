@@ -51,7 +51,7 @@
 
 
 	
-    <title>Product Documents</title>
+    <title>Place an Order - Handling</title>
 
     
     <!-- endinject -->
@@ -323,206 +323,181 @@
         <section class="body-content" style="z-index: 3">
             <div class="page-content">
                 <div class="container">
+                    
                     <div class="row">
+                        <div class="col-md-8 col-sm-12 col-xs-12"> 
+                            <div>
+                                <a href="index.html"><img src="static/img/checkout-checkout.jpg" style="width: 100%;"></a>
+                            </div>
+                            <div class="text-left order-title">
+                                <h2 class="text-uppercase">Checkout</h2>
+                                <p class="order-info">Ship To: 2820 Yonkers Rd, Raleigh, NC 27604-3230, USA<br>
+                                Final Destination Country: United States of America<br>
+                                Your PO for this order:  123345678<br>
+                                Requested Pick Up Date: Dec 25, 2017</p>
+                                
+                                  
+                            </div> 
+                        </div>
 
-                        <div class="col-md-4 col-xs-12">
+                        <div class="col-md-4 col-sm-12 col-xs-12 place-order-sidebar-light">   
+                            <button class="btn btn-medium btn-dark-solid full-width top-cta" value="continue">SUBMIT ORDER
+                            </button>
+                       
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 table-overview">
                             <div class="text-left text-uppercase">
-                                <h1>Documents</h1>
+                                <h4>Products in this order</h4>
                             </div>
                         </div>
-                        <div class="col-md-8 col-xs-12">
-                            <input type="text" id="searchbox" class="form-control list-filter" placeholder="Search Documents">
-                            <div style="float: right; padding-right: 30px">
-                                <label for="length_change">Items per page: </label>
-                                <select name='length_change' id='length_change' class="input-sm">
-                                    <option value='10'>10</option>
-                                    <option value='50'>50</option>
-                                    <option value='100'>100</option>
-                                    <option value='200'>200</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-xs-12 table-scroll table-list">
-                            <table id="example" class="display table table-simple table-scroll" cellspacing="0" width="100%">
-
+                   </div>
+                    <div class="row">
+                       <div class="col-md-12 col-sm-12 table-scroll table-end">   
+                            <table class="display table table-simple table-money table-scroll">
                                 <thead>
-                                    <tr class="lot">
-                                        <th>Product Name</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th>Last Purchase Date</th>
+                                    <tr>
+                                        <th class="first-item">Product</th>
+                                        <th class="first-item">MOQ</th>
+                                        <th class="first-item"> Quantity</th>
+                                        <th>Price</th>
+                                        <th>Unit Price</th>
+                                        <th>Total</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                    
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
+                                        									   <tr class="cart-line-text">
+                                        <td class="first-item">Krytox GPL224 Grease - 8 kg Cartridge</td>
+                                        <td class="first-item">12</td>
+                                        <td class="first-item">12</td>
+                                         <td>$1.5818/kg</td>
+                                         <td>$12.6543</td>
+                                         <td>$151.8516</td>
+                                    </tr>
                                     
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
+                                        									   <tr class="cart-line-text">
+                                        <td class="first-item">Krytox GPL224 Grease - 8 kg Cartridge</td>
+                                        <td class="first-item">12</td>
+                                        <td class="first-item">12</td>
+                                         <td>$1.5818/kg</td>
+                                         <td>$12.6543</td>
+                                         <td>$151.8516</td>
+                                    </tr>
                                     
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-                                    
-                                        <tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#">Request SDS</a></td>
-    <td><a href="#">Request TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
-<tr>
-    <td class="first-item">Product Name - Grade Name</td>
-    <td><a href="#"> Download SDS</a></td>
-    <td><a href="#"> Download TDS</a></td>
-    <td>Dec 25, 2017</td>  
-</tr> 
+                                        									   <tr class="cart-line-text">
+                                        <td class="first-item">Krytox GPL224 Grease - 8 kg Cartridge</td>
+                                        <td class="first-item">12</td>
+                                        <td class="first-item">12</td>
+                                         <td>$1.5818/kg</td>
+                                         <td>$12.6543</td>
+                                         <td>$151.8516</td>
+                                    </tr>
                                      
                                 </tbody>
                             </table>
-                            
-                            <script type="text/javascript">
-                                $(document).ready(function() {
-                                    $('#example').DataTable();
-                                } );
-                              </script>
-                              <script type="text/javascript">
-                                    $(document).ready(function() {
-                                        var dataTable = $('#example').dataTable();
-                                        $("#searchbox").keyup(function() {
-                                        dataTable.fnFilter(this.value);
-                                    });    
-                                });
-                            </script>
+                        </div>
 
 
-                            <script type="text/javascript">
-                            var oTable = $('#example').DataTable({});
 
-                                </script>
-                                          
-                            <script type="text/javascript">
-                                          $('#length_change').change( function() { 
-                                oTable.page.len( $(this).val() ).draw();
-                            });     
-                                </script>     
+                        <div class="col-md-4 col-md-offset-8 col-xs-12 shipment-summary">     
+                            <table class="table table-simple table-money text-right" >
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Subtotal:</th>
+                                        <td>$334,567.O045</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Shipping:</th>
+                                        <td>$5.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Processing/Fees:</th>
+                                        <td>$100.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tax:</th>
+                                        <td>Exempt</td>
+                                    </tr>
+                                </tbody>      
+                            </table>
+                            <table class="top-table table table-simple table-money table-total text-right" >
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Shipment Total:</th>
+                                        <td>$334,572.0000</td>
+                                    </tr>       
+                                </tbody> 
+                            </table>
+                        </div>
 
-                 
 
+              
 
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <dl class="toggle accordian-checkout">
+                                <dt class="">
+                                    <a href="" class="accordian-checkout">Shipping Information</a>
+                                </dt>
+                                <dd style="display: block;">
+                                    <p>Shipping Address: 1234 B Ward Ave, Wardtown, IL  03421, USA<br>
+                                    Requested Delivery Date: Dec 25, 2017<br>
+                                    Freight Terms: ChemPoint Freight<br>
+                                    Carrier Service Level: Next Day<br>
+                                    Special Carrier Service: None / Temp Control / Freeze Protect</p>
+                                </dd>
+                                <dt class="">
+                                    <a href="" class="accordian-checkout">Handling Information</a>
+                                </dt>
+                                <dd style="display: block;">
+                                    <div class="col-md-6 col-sm-12 col-xs-12 two-columns"> 
+                        
+                                <p class="p-title"><strong>DOCUMENTATION</strong></p>
+                                <p>• PO # on Documents<br>
+                                    • Customer Product Code # on Documents<br>
+                                    • Customer Product Name on Documents<br>
+                                    • Include COA with Shipment<br>
+                                    • Include MSDS with Shipment</p>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns"> 
+                              
+                                        
+                                <p class="p-title"><strong>PACKAGING</strong></p>
+                                <p>•  Palletize<br>
+                                    • Shrink Wrap<br>
+                                    • Bar Codes<br>
+                                    • Customer Product # on Product<br>
+                                    • PO# on Product</p>
+                            </div>
+
+                            <div class="text-left">
+                                <p class="p-title"><strong>SPECIAL INSTRUCTIONS</strong></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                            </div> 
+                            <div class="text-left">
+                                <p class="p-title"><strong>ADDITIONAL INSTRUCTIONS</strong></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                            </div> 
+                                </dd>
+                                <dt>
+                                    
+                                </dt>
+                                
+                            </dl>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </section>
         <!--body content end-->
-
+        
 
 
         <!--footer start 1-->

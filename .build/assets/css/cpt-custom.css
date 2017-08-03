@@ -155,6 +155,18 @@ padding: 0 0 0 36px;
 	letter-spacing: 0px;
 }
 
+.order-info {
+	font-family: 'pluto_sans';
+	font-size: 13px;
+	line-height: 25px;
+    color: #444;
+    float: left;
+    display: inline;
+}
+.no-float {
+	float: none !important;
+}
+
 .heading-title-alt h6 {
 	font-size: 15px
 }
@@ -192,18 +204,22 @@ padding: 0 0 0 36px;
 
 
 .dropdown-button {
-	top: 52px !important;
+	top: 40px !important;
 	right: auto !important;
 	left: auto !important;
 	white-space: normal;
 	width: 100%;
 	text-align: left;
-	font-size: 14px;
-	font-family: 'pluto_sans', Arial, sans-serif;
+	font-size: 13px;
 	margin-top: 0px !important;
 }
 
 .two-columns {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.two-forms {
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -319,12 +335,110 @@ section.page-title {
 	color: #ffffff;
 	text-align: center;
 }
-
 .toggle > dt > a {
 	font-family: 'pluto_sans', Arial, sans-serif;
 	letter-spacing: 0px;
 	text-decoration: none;
 }
+
+a.accordian-checkout {
+		font-family: 'pluto_sans_bold', Arial, sans-serif !important;
+		font-size: 15px !important;
+}
+
+.toggle.accordian-checkout > dt > a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000;
+    border: none;
+    background: transparent;
+}
+.toggle.accordian-checkout > dt > a.active {
+	background-color: #ffffff;
+	color:#000;
+
+}
+.toggle.accordian > dd {
+
+    padding: 10px 20px 10px;
+    
+}
+.toggle.accordian-checkout > dt > a:hover, .toggle.accordian-checkout > dt > a.active {
+    color: #000;
+    border-color: transparent;
+    background: transparent;
+}
+
+.toggle.accordian-checkout > dt {
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 400;
+	border-top: 1px solid #000;
+	margin-top: 10px;
+	padding-top: 10px; 
+}
+
+dd.last {
+	border-bottom: 1px solid #000;
+padding-bottom: 10px;
+}
+
+.toggle.accordian-checkout > dt > a.active::after, .toggle.accordian-checkout > dt > a.active:hover::after {
+
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    margin-top: -8px;
+    content: "\e641";
+    text-align: center;
+    text-transform: none;
+    color: #000;
+    font-family: "icomoon";
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 15px;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
+
+}
+
+.toggle.accordian-checkout > dt > a::after {
+    content: "\F107";
+    font-family: "FontAwesome";
+    color: #ffffff;
+    right: 15px;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
+}
+
+.toggle.accordian-checkout > dt > a::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    margin-top: -8px;
+    content: "\e648";
+    text-align: center;
+    text-transform: none;
+    color: #000;
+    font-family: "icomoon";
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 15px;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
+}
+
 
 .toggle > dt > a:after {
     content: "\F107";
@@ -334,6 +448,7 @@ section.page-title {
     -webkit-font-smoothing: antialiased; 
     speak: none;
 }
+
 
 .toggle > dt > a:hover, .toggle > dt > a.active {
 	color: #fff;
@@ -416,6 +531,10 @@ section.page-title {
 	color: #333 !important;
 }
 
+.user-name.btn-link, .account-name.btn-link {
+	font-size: 13px;
+}
+
 .user-name  a {
 	color: #333;
 }
@@ -451,6 +570,10 @@ p {
 	color: #231F20;
 }
 
+.p-title {
+margin-bottom: 15px;
+}
+
 h1 {
 	line-height: 1.1;
 
@@ -458,6 +581,12 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'pluto_sans_bold', Arial, sans-serif;
+	letter-spacing: 0px;
+	margin-bottom: 20px;
+}
+
+.h2-regular, .h3-regular, .h4-regular h4, .h5-regular, .h6-regular {
+	font-family: 'pluto_sans', Arial, sans-serif !important;
 	letter-spacing: 0px;
 	margin-bottom: 20px;
 }
@@ -591,7 +720,9 @@ button, input, select, textarea {
 }
 
 .btn-link {
-	color: #333;
+	font-size: 12px;
+font-weight: normal;
+	color: #0099D8;
 }
 
 .btn-link:hover {
@@ -632,6 +763,7 @@ button, input, select, textarea {
     color:#0099D8;
 }
 
+
 .btn-small-light {
 	margin-top: 8px;
 	margin-bottom: 20px;
@@ -650,7 +782,14 @@ button, input, select, textarea {
 .btn-dropdown-border-color:hover, .btn-theme-border-color:hover, .price-col.feature .p-btn:hover, .side-social-link a:hover, .massive-progress.progress-theme-color .progress-bar > span:before {
 	border: 1px solid #F05C22;
 }
-
+.under-button-link {
+	margin-bottom: 15px;
+	float: right;
+	font-size: 14px;
+}
+.btn-small.under-button-link {
+	padding-bottom: 0px;
+}
 .btn-small-dropdown {
 color: #231F20 !important;
 }
@@ -709,9 +848,20 @@ a, .btn {
 
 .place-order-sidebar {
     background-color: #f8f8f8;
-    padding-top: 20px;
     border-radius: 0px;
     float: right;
+}
+
+.place-order-sidebar-light {
+    background-color: #ffffff;
+    border-radius: 0px;
+    float: right;
+}
+.place-order-sidebar-light>.btn-small {
+    margin-top: 0px;
+}
+.place-order-sidebar>.btn-small {
+    margin-top: 0px;
 }
 
 .order-title {
@@ -760,7 +910,7 @@ a, .btn {
 }
 
 .table-overview {
-		padding-top: 50px;
+		padding-top: 50px; 
 }
 .table-list {
 	padding-top: 30px;
@@ -854,6 +1004,13 @@ a, .btn {
 	font-size: 75%;
 	color:#F05C22
 }
+.fa.disabled,
+.fa[disabled],
+.disabled > .fa,
+[disabled] > .fa {
+  color: lightgrey;
+  /*or*/ opacity: 0.5;
+}
 
 .fa.fa-chevron-right.fa-stack-1x {
     padding: 1px 0 0 2px;
@@ -927,14 +1084,53 @@ a, .btn {
 .dataTables_info {
 	padding-top: 27px;
 }
-.form-control {
-	border: 1px solid #818284;
-	font-size: 13px;
+input.form-control {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	height: 40px !important;
 }
+
+input.input-sm {
+	border: 1px solid #231F20;
+	border-radius: 0px;
+		height: 24px !important;
+
+	margin-left: 12px;
+}
+
+.form-control {
+	border: 1px solid #231F20;
+	font-size: 13px;
+	border-radius: 0px;
+	line-height: 18px;
+	padding: 10px 20px;
+}
+.cart-row {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.cart-text p {
+text-align: center;
+padding-top: 6px;
+white-space: normal;
+width: 100%;
+text-align: left;
+font-size: 13px;
+
+margin-top: 0px !important;
+}
+
+.form-control.cart-line-qty {
+	width: 0px !important;
+	min-width: 90px;
+}
+
+
 .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
+
 }
 .list-filter {
 	display: inline-block;
@@ -1335,7 +1531,9 @@ Media Queries
 
 
 @media only screen and (max-width: 768px) {
-	
+	.form-group {
+    margin-bottom: 30px;
+}
 	.pagination {
 		float: none !important;
 	}
