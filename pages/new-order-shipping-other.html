@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Place an Order: Shipping</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 col-xs-12 form-group"> 
+                            <a href="new-order-cart-with-products.html" title="order-breadcrumb">
+                                <div class="col-xs-3 rollover-on rollover-style"> 
+                                </div>
+                            </a>
+                            
+                                <div class="col-xs-3 rollover1 rollover-style"> 
+                                </div>
+                            
+                                <div class="col-xs-3 rollover2-off rollover-style"> 
+                                </div>
+                            
+                                <div class="col-xs-3 rollover3-off rollover-style"> 
+                                </div>
+
+                            
+                        
+                            
+                           
+                            <div class="text-left table-overview">
+                                <h2>SHIPPING</h2>
+                                <p class="order-info">Ship To: 2820 Yonkers Rd, Raleigh, NC 27604-3230, USA<br>
+                                Final Destination Country: United States of America<br>
+                                Your PO for this order: 1234567890</p>
+                                
+                                  
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 place-order-sidebar-light">   
+                            <a href="new-order-4.html" class="btn btn-small btn-dark-solid full-width top-cta" value="continue">CONTINUE TO HANDLING</a>
+                       
+                            <a href="#" class="btn btn-link full-width" value="save">SAVE CART
+                            </a>  
+                        </div> 
+                    </div> 
+
+
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12"> 
+                            <label for="form-field-name">Freight Terms</label>
+                            <div class="dropdown">
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Freight Collect
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-button">
+                                    <li><a href="#">ChemPoint Freight</a></li>
+                                    <li><a href="#">Freight Collect</a></li>
+                                    <li><a href="#">3rd Party Logistics</a></li>
+                                    <li><a href="#">Pickup/Will Call</a></li>
+                                    <li><a href="#">Other</a></li>
+                                </ul>
+                            </div>
+                            <script type="text/javascript">
+                                $('section .dropdown-toggle').dropdown(); 
+                            </script> 
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12"> 
+                            <label for="form-field-name">Carrier</label>
+                                    
+                            <div class="dropdown">
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">FEDEX
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-button">
+                                    <li><a href="#">Option Number 1</a></li>
+                                    <li><a href="#">Option Number 2</a></li>
+                                    <li><a href="#">Option Number 3</a></li>
+                                    <li><a href="#">Option Number 4</a></li>
+                                    <li><a href="#">Option Number 5</a></li>
+                                </ul>
+                            </div>
+                            <script type="text/javascript">
+                                $('section .dropdown-toggle').dropdown(); 
+                            </script> 
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12"> 
+                            <label for="form-field-name">Requested Pick Up Date</label>    
+                            <div>
+                                <input type='text' class="form-control" id='datetimepicker4' />
+
+                            </div>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#datetimepicker4').datetimepicker();
+                                });
+                            </script>
+                            
+                        </div>
+                        
+
+                        <div class="col-md-4 col-sm-12 col-xs-12"> 
+                            <label for="form-field-name">Special Carrier Services</label>
+                                    
+                            <div class="dropdown">
+                                <button class="btn btn-small btn-small-dropdown btn-block btn-dropdown-border-color dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">Select
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-button">
+                                    <li><a href="#">Option Number 1</a></li>
+                                    <li><a href="#">Option Number 2</a></li>
+                                    <li><a href="#">Option Number 3</a></li>
+                                    <li><a href="#">Option Number 4</a></li>
+                                    <li><a href="#">Option Number 5</a></li>
+                                </ul>
+                            </div>
+                            <script type="text/javascript">
+                                $('section .dropdown-toggle').dropdown(); 
+                            </script>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                     
+
+                        
+                    </div>
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                </div>
+
+
+            </div>
+        </section>
+        <!--body content end-->
+        
+{% endblock content%}

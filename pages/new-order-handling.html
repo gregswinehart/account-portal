@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Place an Order - Handling</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 col-xs-12"> 
+                            <a href="#" title="order-breadcrumb">
+                                <div class="col-xs-3 rollover-on rollover-style"> 
+                                </div>
+                            </a>
+                            <a href="#" title="order-breadcrumb">                           
+                                <div class="col-xs-3 rollover1-on rollover-style"> 
+                                </div>
+                            </a>
+                                <div class="col-xs-3 rollover2 rollover-style"> 
+                                </div>
+                            
+                                <div class="col-xs-3 rollover3-off rollover-style"> 
+                                </div>
+
+                            <div class="text-left order-title form-group">
+                                <h2 class="text-left table-overview">HANDLING</h2>
+                                <p class="order-info no-float">Ship To: 2820 Yonkers Rd, Raleigh, NC 27604-3230, USA<br>
+                                Final Destination Country: United States of America<br>
+                                Your PO for this order: 1234567890</p>
+                            </div> 
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 place-order-sidebar"> 
+                            <a href="new-order-checkout.html" style="margin-top:0px;" class="btn btn-small btn-dark-solid full-width top-cta">CONTINUE TO CHECKOUT</a>
+                       
+                            <a href="#" class="btn btn-link full-width" value="save">SAVE CART
+                            </a>  
+                                
+                            
+                            <table class="top-table table table-simple table-money text-right" >
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Subtotal:</th>
+                                        <td>4,567.O045</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Shipping:</th>
+                                        <td>To be confirmed 
+                                            <a href="#">
+                                                <i class="fa fa-info-circle tooltip-box" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="We will confirm your freight rate in your Order Confirmation Email."></i>
+
+                                                <script type="text/javascript">
+                                                    $(function () {
+                                                  $('[data-toggle="tooltip"]').tooltip()
+                                                })
+                                                </script>
+
+                                                
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Processing/Fees:</th>
+                                        <td>$100.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tax:</th>
+                                        <td>Exempt</td>
+                                    </tr>
+                                </tbody>      
+                            </table>
+                            <table class="top-table table table-simple table-money table-total text-right" >
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Order Total:</th>
+                                        <td>$334,572.0000</td>
+                                    </tr>       
+                                </tbody> 
+                            </table>
+                        </div>
+
+                        <div class="col-md-8 col-sm-12 col-xs-12"> 
+                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns table-overview"> 
+                            
+                                <p class="p-title"><strong>DOCUMENTATION</strong></p>
+                                <p>• PO # on Documents<br>
+                                    • Customer Product Code # on Documents<br>
+                                    • Customer Product Name on Documents<br>
+                                    • Include COA with Shipment<br>
+                                    • Include MSDS with Shipment</p>
+                            </div>
+                        
+                        
+                            <div class="col-md-6 col-sm-12 col-xs-12 two-columns table-overview""> 
+                              
+                                        
+                                <p class="p-title"><strong>PACKAGING</strong></p>
+                                <p>•  Palletize<br>
+                                    • Shrink Wrap<br>
+                                    • Bar Codes<br>
+                                    • Customer Product # on Product<br>
+                                    • PO# on Product</p>
+                            </div>
+
+                            <div class="text-left order-title">
+                                <p class="p-title"><strong>SPECIAL INSTRUCTIONS</strong></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                            </div> 
+
+                            <div class="text-left order-title">
+                                <p><strong>ADDITIONAL INSTRUCTIONS</strong></p>
+                                <textarea name="comments" id="form-field-comments" class="cmnt-text form-control" rows="6" maxlength="400"></textarea>
+                            </div> 
+
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+        
+{% endblock content%}

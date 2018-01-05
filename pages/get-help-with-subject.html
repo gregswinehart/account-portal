@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Get Help</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1 class="heading-title">Get Help</h1>
+                            </div>
+                        </div>
+                        
+                    </div>
+                                       
+                    <div class="row testimonials">
+                        <!--testimonials start-->
+                        <div class="testimonials col-md-6 col-sm-6">
+                            <div class="team-pic">
+                                <a href="#">
+                                    <img src="static/img/lightbulb.jpg" alt="New Product Questions">
+                                </a>
+                            </div>
+                            <div class="team-info"><p><strong>PRODUCT QUESTIONS</strong><br />
+                                Connor Cahill<br />
+                                Sales Professional <br />
+                                555.555.5555 (phone)<br />
+                                Connor.Cahill@chempoint.com</p>
+                            </div>
+                        </div>
+                        <div class="testimonials col-md-6 col-sm-6">
+                            <div class="team-pic">
+                                <a href="#">
+                                    <img src="static/img/order_questions.jpg" alt="Order Questions">
+                                </a>
+                            </div>
+                            <div class="team-info"><p><strong>ORDER QUESTIONS</strong><br />
+                                Customer Solutions Specialist<br />
+                                55.555.5555 (phone)<br />
+                                444.444.4444 (fax)<br />
+                                Customer.Solutions@ChemPoint.com</p>
+                                </div>
+                        </div>
+                        <!--testimonials end-->
+                    </div>
+                    <div class="divider d-solid d-single no-mobile"></div>  
+
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-xs-12">
+                            <section class="normal-tabs line-tab">
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        <div class="form-group">
+                                            <p>Please complete the inquiry form below and a ChemPoint Customer Solutions representative will respond to you within 1 business day.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="col-md-8 col-md-offset-2 col-xs-12">
+                            
+                                    
+                            <div class="form-group">
+                                <p><strong>Inqury Type</strong><br>
+                                Order Inquiry</p>
+
+                                <p><strong>Subject</strong><br>
+                                I have a question about CP# [CP#]</p>
+                            </div>
+                            
+                            <div class="cmnt-text form-group">
+                                <!-- Brief Description -->
+                                <textarea name="comments" id="form-field-brief-description" class="cmnt-text form-control" rows="6" placeholder="Brief Description"></textarea>
+                            </div>                                    
+
+                            <div class="form-group">
+                                <button class="btn btn-small btn-dark-solid" style="float: right;">SUBMIT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+
+{% endblock content%}

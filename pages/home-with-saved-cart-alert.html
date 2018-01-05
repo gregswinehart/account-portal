@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>My ChemPoint</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content" style="padding-bottom: 0px; display: block;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="alert alert-success" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <i class="fa fa-lg fa-thumbs-o-up"></i>  <strong>Your cart has been saved!</strong> You can return to it from the home page whenever you'd like.
+                            </div>
+                        
+                            
+                        </div>
+
+                        <div class="col-md-7 col-xs-12">
+                            <div class="text-left text-uppercase heading-title">
+                                <h1>Vallen - Raleigh, NC</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12 main-address">
+                            <p>2820 Yonkers Rd Raleigh, NC 27604-3230, USA<br>
+                            Phone: 919.834.6010   /   Fax: 555.555.5555</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="border-line"></div>
+
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 ">
+                            <div class="text-left text-uppercase table-overview">
+                                <h2>Unsubmitted Order Carts</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 table-scroll table-end">   
+                            <table class="display table table-simple table-scroll">
+                                <thead>
+                                    <tr>
+                                        <th>Date Modified</th>
+                                        <th>PO</th>
+                                        <th>Ship To</th>
+                                        <th class="td-center">Delete</th>
+                                        <th class="td-center" >Continue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   {% for i in "123" %}
+                                        {% include '_cart-row.html' %}
+                                    {% endfor %} 
+                                </tbody>
+                            </table>
+
+                            <a href="#" class="btn btn-small btn-theme-border-color btn-right">VIEW ALL ORDERS</a>                        
+
+                        </div>
+
+                   
+                    </div>
+
+                    <div class="border-line"></div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 table-overview">
+                            <div class="text-left text-uppercase">
+                                <h2>Recent Orders</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 table-scroll table-end">   
+                            <table class="table table-simple">
+                                <thead>
+                                    <tr class="lot">
+                                        <th>Ordered</th>
+                                        <th>PO</th>
+                                        <th>Order Status</th>
+                                        <th>Est. Ship Date</th>
+                                        <th>Ship To</th>
+                                        <th>CP Order #</th>
+                                        <th class="td-center">Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   {% for i in "12345" %}
+                                        {% include '_order-row.html' %}
+                                    {% endfor %} 
+                                </tbody>
+                            </table>
+
+                                <a href="#" class="btn btn-small btn-theme-border-color btn-right">VIEW ALL ORDERS</a>
+
+                        </div>
+                    </div>                   
+
+                    <div class="border-line"></div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 table-overview">
+                            <div class="text-left text-uppercase">
+                                <h2>My Quotes</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 table-end">   
+                            <table class="table table-scroll table-money table-simple">
+                                <thead>
+                                    <tr class="lot">
+                                        <th class="first-item">Created</th>
+                                        <th class="first-item">SKU</th>
+                                        <th class="first-item">Product</th>
+                                        <th class="first-item">Manufacturer</th>
+                                        <th class="first-item">MOQ</th>
+                                        <th>Price Per lb</th>
+                                        <th>Price Per SKU</th>
+                                        <th class="td-center">Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   {% for i in "12345" %}
+                                        {% include '_quote-row.html' %}
+                                    {% endfor %} 
+                                </tbody>
+                            </table>
+
+                                <a href="#" class="btn btn-small btn-theme-border-color btn-right">VIEW ALL QUOTES</a>
+
+                        </div>
+                    </div>
+
+                    <div class="border-line"></div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 table-overview">
+                            <div class="text-left text-uppercase" style="padding-bottom: 20px;">
+                                <h2>Your ChemPoint Team</h2>
+                            </div>
+                        </div>
+                        
+
+
+
+
+                                      
+                        <div class="row testimonials" style="margin-bottom: 45px;">
+                            <!--testimonials start-->
+                            <div class="testimonials col-md-6 col-sm-6">
+                                <div class="team-pic">
+                                    <a href="#">
+                                        <img src="static/img/lightbulb.jpg" alt="New Product Questions">
+                                    </a>
+                                </div>
+                                <div class="team-info"><p><strong>PRODUCT QUESTIONS</strong><br />
+                                    Connor Cahill | Sales Professional <br />
+                                    555.555.5555 (phone)<br />
+                                    Connor.Cahill@chempoint.com<br />
+                                    <a href="#">Ask a product question</a> </p></p>
+                                </div>
+                            </div>
+                            <div class="testimonials col-md-6 col-sm-6">
+                                <div class="team-pic">
+                                    <a href="#">
+                                        <img src="static/img/order_questions.jpg" alt="Order Questions">
+                                    </a>
+                                </div>
+                                <div class="team-info"><p><strong>ORDER QUESTIONS</strong><br />
+                                    Customer Solutions Specialist<br />
+                                    555.555.5555 (phone) 444.444.4444 (fax)<br />
+                                    Customer.Solutions@ChemPoint.com<br />
+                                    <a href="#">Ask an order question</a> </p>
+                                    </div>
+                            </div>
+                            <!--testimonials end-->
+                        </div>
+                        
+
+
+
+                    </div>
+                </div>
+                <div class="hero" style="background-image:url(/static/img/cpt-freight.jpg)">
+                    <div class="container">
+
+                        <div class="col-md-7">
+                            <div id="cta">
+                                <div id="cta-text-left">
+                                    <h3>ChemPoint Freight</h3>
+                                    <p>Freighting your ChemPoint since 1939, so stop not saving money and time.  Don't believe me?  Just ask Bill right here...  Bill, we have a question for you.  Bill.  BILL...  Can you hear me?  Bill, we really need you to... Oh, forget it.</p>
+                                    <a href="#" class="btn btn-small btn-small-light btn-light-border">SEE HOW YOU'LL SAVE FOR ONCE</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+
+{% endblock content%}

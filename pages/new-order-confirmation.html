@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <title>Place an Order</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12 col-xs-12">
+                            <div class="text-left text-uppercase">
+                                <h1>ORDER PLACED. THANK YOU!</h1>
+                            </div>
+                            <div class="text-left order-info">
+                                <p class="order-info">Ship To: 2820 Yonkers Rd, Raleigh, NC 27604-3230, USA<br>
+                                Final Destination Country: United States of America<br>
+                                Your PO for this order: 1234567890</p>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 col-xs-12">
+                            <div>
+                                <p>We are processing your order now! You will receive an order confirmation email and be able to view your order in Order History within 24 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                       <div class="divider d-solid d-single"></div>
+
+
+
+
+                    <div class="row">
+                         
+                        <div class="col-md-12 col-xs-12 ">
+                            <div class="text-left text-uppercase">
+                                <h3>Other order carts you’ve worked on</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 table-scroll table-end">   
+                            <table class="display table table-simple table-scroll">
+                                <thead>
+                                    <tr>
+                                        <th>Date Modified</th>
+                                        <th>PO</th>
+                                        <th>Ship To</th>
+                                        <th class="td-center">Delete</th>
+                                        <th class="td-center" >Continue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   {% for i in "123" %}
+                                        {% include '_cart-row.html' %}
+                                    {% endfor %} 
+                                </tbody>
+                            </table>
+
+                        
+
+                        </div>
+                    </div>
+                 
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+
+{% endblock content%}

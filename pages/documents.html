@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-xs-12 table-scroll table-list">
-                            <table id="example" class="display table table-simple table-scroll" cellspacing="0" width="100%">
+                            <table id="document-table" class="display table table-simple table-scroll" cellspacing="0" width="100%">
 
                                 <thead>
                                     <tr class="lot">
@@ -49,21 +49,28 @@
                             
                             <script type="text/javascript">
                                 $(document).ready(function() {
-                                    $('#example').DataTable();
+                                    $('#document-table').DataTable();
                                 } );
                               </script>
                               <script type="text/javascript">
                                     $(document).ready(function() {
-                                        var dataTable = $('#example').dataTable();
+                                        var dataTable = $('#document-table').dataTable();
                                         $("#searchbox").keyup(function() {
                                         dataTable.fnFilter(this.value);
-                                    });    
+                                    });   
                                 });
                             </script>
 
-
                             <script type="text/javascript">
-                            var oTable = $('#example').DataTable({});
+                            var oTable = $('#document-table').DataTable({
+                                "columnDefs": [
+                                      { "width": "40%", "targets": 0 },
+                                      { "width": "20%", "targets": 1 },
+                                      { "width": "20%", "targets": 2 },
+                                      { "width": "20%", "targets": 3 }
+                                    ], 
+                            });
+
 
                                 </script>
                                           
@@ -71,10 +78,9 @@
                                           $('#length_change').change( function() { 
                                 oTable.page.len( $(this).val() ).draw();
                             });     
-                                </script>     
+                                </script>  
 
-                 
-
+                            
 
                     </div>
                 </div>

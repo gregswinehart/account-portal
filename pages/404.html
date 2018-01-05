@@ -1,0 +1,38 @@
+{% extends "base-error.html" %}
+
+{% block header %}
+    <title>Page Not Available (404)</title>
+{% endblock header%}
+
+{% block content %}
+
+<section class="body-content" style="z-index: 3">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row" style="padding-bottom: 60px;">
+
+                        <div class="col-md-12 col-xs-12" style="margin-top: 50px;">
+                            <div class="text-left text-uppercase">
+                                <h2>Sorry, there must have been a miscalculation somewhere.</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 col-sm-10 col-xs-10">
+                            
+                            <div class="text-left">
+                                <p>We can’t find the page you are looking for, but we recommend you try one of the links below to help you get back on track.</p>
+                            </div>
+
+                            <a href="https://www.chempoint.com/" class="btn btn-small btn-theme-border-color" style="margin-bottom: 8px;">CHEMPOINT HOME</a>
+
+                            <a href="https://www.chempoint.com/contact/" class="btn btn-small btn-theme-border-color" style="margin-bottom: 8px;">CONTACT US</a>
+                 
+                            
+
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+        <!--body content end-->
+{% endblock %}

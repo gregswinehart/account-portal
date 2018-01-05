@@ -1,0 +1,60 @@
+{% extends "base_login.html" %}
+
+{% block header %}
+    <title>Request Access to My ChemPoint</title>
+{% endblock header%}
+
+{% block content %}
+
+        <!--body content start-->
+        <section class="body-content ">
+
+
+            <div class="page-content">
+                <div class="container login-page">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <section class="normal-tabs line-tab">
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        <form class="js-Mailer" method="post" novalidate="true">
+                                            <div class="form-group">
+                                                <p>We're ready to give you access to My ChemPoint. Simply fill out the form below and you'll hear from us in the next business day!</p>
+                                            </div>
+                                                            
+                                            <div class="form-group">
+                                                <input type="text" name="login-form-country" value="" class="form-control" placeholder="Country"  data-error="">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="text" name="login-form-state" value="" class="form-control" placeholder="State"  data-error="">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="password" name="login-form-city" value="" class="form-control " placeholder="City">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="password" name="login-form-account-number" value="" class="form-control " placeholder="Your ChemPoint Account Number">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <a href="/login-request-access-form-2.html" class="btn btn-small btn-dark-solid full-width">NEXT
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <!--body content end-->
+
+{% endblock content%}

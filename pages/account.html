@@ -48,7 +48,7 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">Fax Number:</th>
-                                        <td>555.555.5555td>
+                                        <td>555.555.5555<td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Credit Term:</th>
@@ -61,12 +61,8 @@
                                  </tbody>
                             </table>
                         </div>
-
-
                     
-                        <div class="divider d-solid d-single no-mobile"></div>
-                        
-                        
+                        <div class="divider d-solid d-single"></div>
 
                         <div class="col-md-12 col-xs-12">
                             <div class="text-left text-uppercase">
@@ -74,7 +70,7 @@
                             </div>
                         </div>   
                         <div class="col-md-12 col-sm-12 table-scroll">   
-                            <table class="table table-simple table-end-no-button">
+                            <table id="account-table" class="table table-simple table-end-no-button">
                                 <thead>
                                     <tr>
                                         <th>Name</th>
@@ -113,8 +109,6 @@
                             <a href="#" class="btn btn-small btn-theme-border-color">REQUEST NEW CONTACT</a>
                         </div>
 
-
-
                         <div class="col-md-12 col-xs-12">
                             <div class="text-left text-uppercase">
                                 <h2>Ship To Locations</h2>
@@ -139,8 +133,6 @@
 
                         </div>
                         
-
-
                         <div class="col-md-12 col-xs-12">
                             <div class="text-left text-uppercase">
                                 <h2>Bill To Locations</h2>
@@ -159,13 +151,22 @@
                                     {% endfor %} 
                                 </tbody>
                             </table>
+                            <script type="text/javascript">
+                            var oTable = $('#account-table').DataTable({
+                                "columnDefs": [
+                                      { "width": "10%", "targets": 0 },
+                                      { "width": "20%", "targets": 1 },
+                                      { "width": "20%", "targets": 2 },
+                                      { "width": "50%", "targets": 3 }
+                                    ], 
+                            });
+
+
+                                </script>
 
                             <a href="#" class="btn btn-small btn-theme-border-color">REQUEST TO CHANGE BILLING LOCATION</a>
 
                         </div>
-                        
-
-
                     </div>
                 </div>
             </div>
